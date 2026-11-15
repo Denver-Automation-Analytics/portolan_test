@@ -14,8 +14,14 @@ The aim is to show how the flood risk assessment outputs can be prepared for mod
 made accessible to agents, and future-proofed by using STAC, AI agents, and cloud-native
 geospatial formats together.
 
-> **Status:** Planning. So far this README is the only deliverable. Nothing has been installed,
-> converted, or uploaded yet.
+> **Status:** The catalog is built and live. Validation and review are in progress.
+
+**Live catalog**
+- Catalog root: <https://portolan-test.s3.us-east-1.amazonaws.com/catalog.json>
+- Browse it in the Radiant Earth-style STAC browser: [open the catalog](https://browser.moregeo.it/external/portolan-test.s3.us-east-1.amazonaws.com/catalog.json)
+- Catalog metadata repository: [Denver-Automation-Analytics/portolan_test](https://github.com/Denver-Automation-Analytics/portolan_test)
+
+> Public access is a pilot setting, pending MHFD approval of the license and public release.
 
 ---
 
@@ -32,12 +38,12 @@ geospatial formats together.
 
 | Phase | Description | Status |
 |---|---|---|
-| 0. Plan | This README | ✅ In progress |
+| 0. Plan | This README | ✅ Done |
 | 1. Set up | Install the Claude Code plugin and `portolan-cli` | ✅ Done (confirm `/portolan:` skills in a new session) |
 | 2. Format pre-flight | Confirm which files are already cloud-native | ✅ Done (see Step 2 findings) |
-| 3. Convert & catalog | Bootstrap a git-backed Portolan catalog | ⬜ |
-| 4. Deploy | Push data and catalog to MBI AWS S3 | ⬜ |
-| 5. Validate & review | `portolan check`, `catalog-grader`, Portolan browser | ⬜ |
+| 3. Convert & catalog | Bootstrap a git-backed Portolan catalog | ✅ Done |
+| 4. Deploy | Push data and catalog to MBI AWS S3 | ✅ Done (live, see above) |
+| 5. Validate & review | `portolan check`, `catalog-grader`, Portolan browser | 🔄 In progress |
 | Next | Front end, agentic access demos | 🔜 Not yet |
 
 **Deployment model (git-backed catalog):** catalog **metadata** (STAC JSON, `README.md`, `AGENTS.md`, styles)
@@ -265,7 +271,7 @@ Build a Portolan catalog from the local folder
 - Use git-backed-catalog with the GitHub repository Denver-Automation-Analytics/portolan_test
   (https://github.com/Denver-Automation-Analytics/portolan_test) and the portolan-catalog-template.
   Keep the metadata in git with CI validation, and keep the data files in AWS S3 at
-  s3://portolan-test/<prefix>, served from https://<public-base>.
+  s3://portolan-test, served from https://portolan-test.s3.us-east-1.amazonaws.com.
 - Formats: the rasters are already COGs and the vectors are already GeoParquet v1.1.0. Reuse them
   as they are and do not re-encode them. Convert only this:
     * hazard/floodplains/*.gpkg -> GeoParquet
@@ -306,7 +312,7 @@ Checkpoints to expect:
 |---|---|
 | GitHub repository (catalog metadata) | [Denver-Automation-Analytics/portolan_test](https://github.com/Denver-Automation-Analytics/portolan_test) |
 | S3 bucket (data assets) | `portolan-test` (`arn:aws:s3:::portolan-test`) |
-| Prefix, Region, and public base URL | TBD |
+| Public base URL | `https://portolan-test.s3.us-east-1.amazonaws.com` (Region `us-east-1`, catalog at the bucket root) |
 
 The git-backed template keeps data uploads separate from catalog publishing:
 
@@ -319,7 +325,7 @@ python3 tools/upload_data.py --confirm
 python3 tools/publish.py
 ```
 
-If you don't use the template, `portolan push s3://portolan-test/<prefix> --dry-run` followed by
+If you don't use the template, `portolan push s3://portolan-test --dry-run` followed by
 `portolan push` does the same job.
 
 Requirements on the S3 side:
@@ -337,7 +343,7 @@ Requirements on the S3 side:
 Check the live deployment:
 
 ```bash
-portolan check --live --url https://<public-base>
+portolan check --live --url https://portolan-test.s3.us-east-1.amazonaws.com
 ```
 
 ## Step 5: Validate & review
@@ -366,7 +372,7 @@ portolan check --live --url https://<public-base>
 | Topic | Status |
 |---|---|
 | License (open license, public release) | **Open**: needs MHFD approval |
-| S3 prefix, Region, and public base URL | **Open** (bucket: `portolan-test`) |
+| S3 prefix, Region, and public base URL | **Decided**: `https://portolan-test.s3.us-east-1.amazonaws.com`, catalog at the bucket root |
 | GitHub org and repository name for the catalog metadata | **Decided**: `Denver-Automation-Analytics/portolan_test` |
 | Floodplains: one item per return period, or one combined layer | **Open** |
 | `risk-grids`: one collection, or split into drivers and threat AEP | **Open** |
