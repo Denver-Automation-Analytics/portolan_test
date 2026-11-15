@@ -87,8 +87,8 @@
     "data": {
       "href": "./risk_driver_structures.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "file:size": 108136082,
-      "file:checksum": "1220121d29fe321c273f3bdfcdd257986a2df765787aacea2e9ba1d31e55a370a192",
+      "file:size": 74064355,
+      "file:checksum": "122053088e82a906e971a6b58f648557aec037e5ca0adbb4d9c1440a6a226a27823b",
       "render:colormap_name": "viridis",
       "bands": [
         {
@@ -98,8 +98,8 @@
           "statistics": {
             "minimum": 0.0,
             "maximum": 13.0,
-            "mean": 8.8887138496642,
-            "stddev": 4.1851910897072
+            "mean": 5.3568955355827,
+            "stddev": 3.9641555489148
           }
         },
         {
@@ -108,9 +108,9 @@
           "nodata": -9999.0,
           "statistics": {
             "minimum": 0.0,
-            "maximum": 13.0,
-            "mean": 0.00070500725222765,
-            "stddev": 0.052936847234172
+            "maximum": 1.0,
+            "mean": 0.00055252688964196,
+            "stddev": 0.023499395815173
           }
         },
         {
@@ -119,9 +119,9 @@
           "nodata": -9999.0,
           "statistics": {
             "minimum": 0.0,
-            "maximum": 1.0,
-            "mean": 1.6811237236173e-07,
-            "stddev": 0.00041001505350409
+            "maximum": 0.0,
+            "mean": 0.0,
+            "stddev": 0.0
           }
         },
         {
@@ -130,9 +130,9 @@
           "nodata": -9999.0,
           "statistics": {
             "minimum": 0.0,
-            "maximum": 13.0,
-            "mean": 0.020609372046213,
-            "stddev": 0.37577386223236
+            "maximum": 11.0,
+            "mean": 0.013371150729336,
+            "stddev": 0.18913565311933
           }
         },
         {
@@ -142,8 +142,8 @@
           "statistics": {
             "minimum": 1.0,
             "maximum": 5.0,
-            "mean": 1.2615854291179,
-            "stddev": 0.98651050790638
+            "mean": 2.5149550611463,
+            "stddev": 1.3455820819009
           }
         }
       ],

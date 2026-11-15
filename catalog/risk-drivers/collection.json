@@ -56,7 +56,7 @@
     "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
     "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
   ],
-  "updated": "2026-11-14T23:48:57Z",
+  "updated": "2026-11-15T02:23:10Z",
   "title": "Risk Drivers",
   "extent": {
     "spatial": {
@@ -110,8 +110,8 @@
       "href": "./items.parquet",
       "type": "application/vnd.apache.parquet",
       "title": "STAC items as GeoParquet",
-      "file:size": 22127,
-      "file:checksum": "1220363ccae2eb7d653ce52e0a9c3c0209263f07d4ff0833abeae62519eb46167d5e",
+      "file:size": 22143,
+      "file:checksum": "12207267ffc34d3a291ff20f7e85d4efc654adf2e9cf5488b915bb736cb92c88bc16",
       "roles": [
         "collection-mirror"
       ]

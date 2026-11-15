@@ -52,9 +52,10 @@
     "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
     "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
   ],
-  "updated": "2026-11-14T23:49:50Z",
+  "updated": "2026-11-15T02:24:29Z",
   "geoparquet:geometry_type": [
-    "MultiPolygon"
+    "MultiPolygon",
+    "Polygon"
   ],
   "geoparquet:feature_count": 20767,
   "table:row_count": 20767,
@@ -194,7 +195,7 @@
     },
     {
       "name": "geometry_bbox",
-      "type": "struct<xmin: float not null, ymin: float not null, xmax: float not null, ymax: float not null>"
+      "type": "struct<xmin: float, ymin: float, xmax: float, ymax: float>"
     }
   ],
   "pmtiles:min_zoom": 0,
@@ -252,8 +253,8 @@
     "structure_risk": {
       "href": "./structure_risk.parquet",
       "type": "application/vnd.apache.parquet",
-      "file:size": 5247841,
-      "file:checksum": "1220c99bb5da672206f2aebfecb6ad1ec91c56b6a4073ef9bcd87c27e6a31b2bc444",
+      "file:size": 4461590,
+      "file:checksum": "12209b5d383e03a42e7c1f6c1f2cc8331e0c38c51e577c9599a7b9441067c404f88b",
       "roles": [
         "data"
       ]
@@ -271,8 +272,8 @@
       "href": "./structure_risk.pmtiles",
       "type": "application/vnd.pmtiles",
       "title": "structure_risk (vector tiles)",
-      "file:size": 10877287,
-      "file:checksum": "122016394f897efea62c6d149d710adc25ca6248896be35b53dd64aef3e2bf6a46ba",
+      "file:size": 10877286,
+      "file:checksum": "1220f4076024033728c0f734d7db3f17e1ae05008271fa9550ed5f93122be12a50b5",
       "roles": [
         "visual"
       ]

@@ -1,6 +1,6 @@
 {
   "spec_version": "1.0.0",
-  "current_version": "1.0.0",
+  "current_version": "1.0.2",
   "versions": [
     {
       "version": "1.0.0",
@@ -46,6 +46,94 @@
         "transit/risk_driver_transit.tif",
         "structures/risk_driver_structures.thumb.jpg",
         "structures/risk_driver_structures.tif",
+        "items.parquet"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-11-15T02:21:48.035567Z",
+      "breaking": false,
+      "assets": {
+        "transit/risk_driver_transit.thumb.jpg": {
+          "sha256": "207e497c5919ffbcd762eecc74c1f2e54800639c5f9f3aad3cdbe48045528f1b",
+          "size_bytes": 18202,
+          "href": "risk-drivers/transit/risk_driver_transit.thumb.jpg",
+          "mtime": 1794694336.7137146
+        },
+        "transit/risk_driver_transit.tif": {
+          "sha256": "3fbd9febe96d4ed4ea501e8497a9714568b8ce7ba2b695f2d95b058527c0aac2",
+          "size_bytes": 105554528,
+          "href": "risk-drivers/transit/risk_driver_transit.tif",
+          "source_path": "transit/risk_driver_transit.tif",
+          "mtime": 1792692650.0
+        },
+        "structures/risk_driver_structures.thumb.jpg": {
+          "sha256": "7708310b89aea974521d481c2d206128fea1237c892a6694a0b995b5505e0ea6",
+          "size_bytes": 20487,
+          "href": "risk-drivers/structures/risk_driver_structures.thumb.jpg",
+          "mtime": 1794694337.9322875
+        },
+        "structures/risk_driver_structures.tif": {
+          "sha256": "53088e82a906e971a6b58f648557aec037e5ca0adbb4d9c1440a6a226a27823b",
+          "size_bytes": 74064355,
+          "href": "risk-drivers/structures/risk_driver_structures.tif",
+          "source_path": "structures/risk_driver_structures.tif",
+          "mtime": 1794709305.8186607
+        },
+        "items.parquet": {
+          "sha256": "8aee3c15898996f764ad54f9b1017318ca1cd1c4a2afaf2defcc0a701818cb2a",
+          "size_bytes": 22132,
+          "href": "risk-drivers/items.parquet",
+          "mtime": 1794709307.9878335,
+          "source_fingerprint": "7815953f0b2516c60ffde72d777dad0d703eb38827c195e4cf3b3ad8d18995ab"
+        }
+      },
+      "changes": [
+        "structures/risk_driver_structures.tif",
+        "items.parquet"
+      ]
+    },
+    {
+      "version": "1.0.2",
+      "created": "2026-11-15T02:23:03.162225Z",
+      "breaking": false,
+      "assets": {
+        "transit/risk_driver_transit.thumb.jpg": {
+          "sha256": "207e497c5919ffbcd762eecc74c1f2e54800639c5f9f3aad3cdbe48045528f1b",
+          "size_bytes": 18202,
+          "href": "risk-drivers/transit/risk_driver_transit.thumb.jpg",
+          "mtime": 1794694336.7137146
+        },
+        "transit/risk_driver_transit.tif": {
+          "sha256": "64d7ce8e6bdd71c65c3d337db21a5b0638b5b646047a7ff7c15813fef8808522",
+          "size_bytes": 66916950,
+          "href": "risk-drivers/transit/risk_driver_transit.tif",
+          "source_path": "transit/risk_driver_transit.tif",
+          "mtime": 1794709382.0478947
+        },
+        "structures/risk_driver_structures.thumb.jpg": {
+          "sha256": "7708310b89aea974521d481c2d206128fea1237c892a6694a0b995b5505e0ea6",
+          "size_bytes": 20487,
+          "href": "risk-drivers/structures/risk_driver_structures.thumb.jpg",
+          "mtime": 1794694337.9322875
+        },
+        "structures/risk_driver_structures.tif": {
+          "sha256": "53088e82a906e971a6b58f648557aec037e5ca0adbb4d9c1440a6a226a27823b",
+          "size_bytes": 74064355,
+          "href": "risk-drivers/structures/risk_driver_structures.tif",
+          "source_path": "structures/risk_driver_structures.tif",
+          "mtime": 1794709305.8186607
+        },
+        "items.parquet": {
+          "sha256": "7267ffc34d3a291ff20f7e85d4efc654adf2e9cf5488b915bb736cb92c88bc16",
+          "size_bytes": 22143,
+          "href": "risk-drivers/items.parquet",
+          "mtime": 1794709383.1210327,
+          "source_fingerprint": "a3ffbc2dcd3826d649a5432b9268624867a99dafe2bf39bbf3f202e4a6fc777d"
+        }
+      },
+      "changes": [
+        "transit/risk_driver_transit.tif",
         "items.parquet"
       ]
     }

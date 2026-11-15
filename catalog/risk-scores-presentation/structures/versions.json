@@ -1,6 +1,6 @@
 {
   "spec_version": "1.0.0",
-  "current_version": "1.0.1",
+  "current_version": "1.0.3",
   "versions": [
     {
       "version": "1.0.0",
@@ -59,6 +59,70 @@
       },
       "changes": [
         "structure_risk.parquet",
+        "structure_risk.pmtiles"
+      ],
+      "message": "Generated PMTiles and thumbnail: structure_risk.pmtiles, structure_risk.thumb.jpg"
+    },
+    {
+      "version": "1.0.2",
+      "created": "2026-11-15T02:23:05.831478Z",
+      "breaking": false,
+      "assets": {
+        "structure_risk.parquet": {
+          "sha256": "9b5d383e03a42e7c1f6c1f2cc8331e0c38c51e577c9599a7b9441067c404f88b",
+          "size_bytes": 4461590,
+          "href": "risk-scores-presentation/structures/structure_risk.parquet",
+          "source_mtime": 1794708886.4594462,
+          "mtime": 1794708886.4594462,
+          "feature_count": 20767,
+          "schema_fingerprint": "b66220cb37964439"
+        },
+        "structure_risk.thumb.jpg": {
+          "sha256": "f788b4bbb8d04b9191ed0d6441b10d9a9b68b5a37748de1276cd6048d99619e7",
+          "size_bytes": 13243,
+          "href": "risk-scores-presentation/structures/structure_risk.thumb.jpg",
+          "mtime": 1794698357.3898535
+        },
+        "structure_risk.pmtiles": {
+          "sha256": "16394f897efea62c6d149d710adc25ca6248896be35b53dd64aef3e2bf6a46ba",
+          "size_bytes": 10877287,
+          "href": "risk-scores-presentation/structures/structure_risk.pmtiles",
+          "source_path": "structure_risk.pmtiles",
+          "mtime": 1794698356.780473
+        }
+      },
+      "changes": [
+        "structure_risk.parquet"
+      ]
+    },
+    {
+      "version": "1.0.3",
+      "created": "2026-11-15T02:24:41.449447Z",
+      "breaking": false,
+      "assets": {
+        "structure_risk.parquet": {
+          "sha256": "9b5d383e03a42e7c1f6c1f2cc8331e0c38c51e577c9599a7b9441067c404f88b",
+          "size_bytes": 4461590,
+          "href": "risk-scores-presentation/structures/structure_risk.parquet",
+          "source_mtime": 1794708886.4594462,
+          "mtime": 1794708886.4594462,
+          "feature_count": 20767,
+          "schema_fingerprint": "b66220cb37964439"
+        },
+        "structure_risk.thumb.jpg": {
+          "sha256": "f788b4bbb8d04b9191ed0d6441b10d9a9b68b5a37748de1276cd6048d99619e7",
+          "size_bytes": 13243,
+          "href": "risk-scores-presentation/structures/structure_risk.thumb.jpg",
+          "mtime": 1794709481.3904512
+        },
+        "structure_risk.pmtiles": {
+          "sha256": "f4076024033728c0f734d7db3f17e1ae05008271fa9550ed5f93122be12a50b5",
+          "size_bytes": 10877286,
+          "href": "risk-scores-presentation/structures/structure_risk.pmtiles",
+          "mtime": 1794709480.5870261
+        }
+      },
+      "changes": [
         "structure_risk.pmtiles"
       ],
       "message": "Generated PMTiles and thumbnail: structure_risk.pmtiles, structure_risk.thumb.jpg"

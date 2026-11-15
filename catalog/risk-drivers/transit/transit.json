@@ -87,8 +87,8 @@
     "data": {
       "href": "./risk_driver_transit.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "file:size": 105554528,
-      "file:checksum": "12203fbd9febe96d4ed4ea501e8497a9714568b8ce7ba2b695f2d95b058527c0aac2",
+      "file:size": 66916950,
+      "file:checksum": "122064d7ce8e6bdd71c65c3d337db21a5b0638b5b646047a7ff7c15813fef8808522",
       "render:colormap_name": "viridis",
       "bands": [
         {
@@ -98,8 +98,8 @@
           "statistics": {
             "minimum": 0.0,
             "maximum": 13.0,
-            "mean": 4.7043670429554,
-            "stddev": 5.0654326629864
+            "mean": 2.5006446147046,
+            "stddev": 3.5293606779863
           }
         },
         {
@@ -108,9 +108,9 @@
           "nodata": -9999.0,
           "statistics": {
             "minimum": 0.0,
-            "maximum": 13.0,
-            "mean": 0.003224087095882,
-            "stddev": 0.13182273873033
+            "maximum": 2.0,
+            "mean": 0.0017128333578901,
+            "stddev": 0.043520974134994
           }
         },
         {
@@ -119,9 +119,9 @@
           "nodata": -9999.0,
           "statistics": {
             "minimum": 0.0,
-            "maximum": 13.0,
-            "mean": 0.35901105991685,
-            "stddev": 1.5894340474293
+            "maximum": 12.0,
+            "mean": 0.18644099012819,
+            "stddev": 0.85279917086687
           }
         },
         {
@@ -131,8 +131,8 @@
           "statistics": {
             "minimum": 0.0,
             "maximum": 13.0,
-            "mean": 0.16286517427897,
-            "stddev": 1.0927433572215
+            "mean": 0.094942537203476,
+            "stddev": 0.63763486687528
           }
         },
         {
@@ -142,8 +142,8 @@
           "statistics": {
             "minimum": 1.0,
             "maximum": 5.0,
-            "mean": 2.8092166375323,
-            "stddev": 1.9455276047142
+            "mean": 3.9517091498453,
+            "stddev": 1.4094349756624
           }
         }
       ],

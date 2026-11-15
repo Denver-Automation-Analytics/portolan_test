@@ -22,10 +22,10 @@
       "total_size_bytes": 7405205628
     },
     "risk-drivers": {
-      "updated": "2026-11-14T22:12:18.941291+00:00",
-      "current_version": "1.0.0",
+      "updated": "2026-11-15T02:23:03.165481+00:00",
+      "current_version": "1.0.2",
       "asset_count": 5,
-      "total_size_bytes": 213751426
+      "total_size_bytes": 141042137
     },
     "risk-threat-aep": {
       "updated": "2026-11-14T22:12:22.405965+00:00",
@@ -34,10 +34,10 @@
       "total_size_bytes": 1032475172
     },
     "hazard-aep": {
-      "updated": "2026-11-14T22:12:59.994795+00:00",
+      "updated": "2026-11-15T02:07:22.871449+00:00",
       "current_version": "1.0.0",
-      "asset_count": 3,
-      "total_size_bytes": 182113381
+      "asset_count": 2,
+      "total_size_bytes": 182091842
     },
     "hazard-floodplains/1000yr": {
       "updated": "2026-11-14T22:15:22.545599+00:00",
@@ -154,10 +154,10 @@
       "total_size_bytes": 1507839
     },
     "risk-scores-presentation/structures": {
-      "updated": "2026-11-14T23:19:17.468163+00:00",
-      "current_version": "1.0.1",
+      "updated": "2026-11-15T02:24:41.452715+00:00",
+      "current_version": "1.0.3",
       "asset_count": 3,
-      "total_size_bytes": 16138371
+      "total_size_bytes": 15352119
     },
     "risk-scores-presentation/transit": {
       "updated": "2026-11-14T23:17:40.800229+00:00",
@@ -256,5 +256,5 @@
       "total_size_bytes": 3409015
     }
   },
-  "updated": "2026-11-14T23:47:02.266200+00:00"
+  "updated": "2026-11-15T02:24:41.452715+00:00"
 }
