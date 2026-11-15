@@ -36,7 +36,7 @@ __pycache__/
 .venv*/
 
 # Portolan runtime files
-.portolan/.versions.lock
+**/.versions.lock
 
 # Local git config (Windows fileMode setting — not repo state)
 .gitconfig
