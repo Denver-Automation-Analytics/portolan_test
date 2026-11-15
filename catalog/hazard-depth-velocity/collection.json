@@ -1,0 +1,195 @@
+{
+  "type": "Collection",
+  "id": "hazard-depth-velocity",
+  "stac_version": "1.1.0",
+  "description": "Hazard Depth Velocity",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./1yr/1yr.json",
+      "type": "application/geo+json",
+      "title": "1yr"
+    },
+    {
+      "rel": "item",
+      "href": "./10yr/10yr.json",
+      "type": "application/geo+json",
+      "title": "10yr"
+    },
+    {
+      "rel": "item",
+      "href": "./100yr/100yr.json",
+      "type": "application/geo+json",
+      "title": "100yr"
+    },
+    {
+      "rel": "item",
+      "href": "./1000yr/1000yr.json",
+      "type": "application/geo+json",
+      "title": "1000yr"
+    },
+    {
+      "rel": "item",
+      "href": "./2yr/2yr.json",
+      "type": "application/geo+json",
+      "title": "2yr"
+    },
+    {
+      "rel": "item",
+      "href": "./25yr/25yr.json",
+      "type": "application/geo+json",
+      "title": "25yr"
+    },
+    {
+      "rel": "item",
+      "href": "./200yr/200yr.json",
+      "type": "application/geo+json",
+      "title": "200yr"
+    },
+    {
+      "rel": "item",
+      "href": "./300yr/300yr.json",
+      "type": "application/geo+json",
+      "title": "300yr"
+    },
+    {
+      "rel": "item",
+      "href": "./50yr/50yr.json",
+      "type": "application/geo+json",
+      "title": "50yr"
+    },
+    {
+      "rel": "item",
+      "href": "./400yr/400yr.json",
+      "type": "application/geo+json",
+      "title": "400yr"
+    },
+    {
+      "rel": "item",
+      "href": "./500yr/500yr.json",
+      "type": "application/geo+json",
+      "title": "500yr"
+    },
+    {
+      "rel": "item",
+      "href": "./5yr/5yr.json",
+      "type": "application/geo+json",
+      "title": "5yr"
+    },
+    {
+      "rel": "item",
+      "href": "./750yr/750yr.json",
+      "type": "application/geo+json",
+      "title": "750yr"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.mhfd.org",
+      "title": "License"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "via",
+      "href": "https://denver-automation-analytics.github.io/mhfd_risk_receptors/",
+      "type": "text/html",
+      "title": "Original source"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
+  ],
+  "updated": "2026-11-14T23:48:53Z",
+  "title": "Hazard Depth Velocity",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -104.88526419603444,
+          39.748340125935506,
+          -104.64645583970847,
+          40.021185063425854
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Mile High Flood District",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://www.mhfd.org"
+    },
+    {
+      "name": "Michael Baker International",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://www.mbakerintl.com"
+    }
+  ],
+  "summaries": {
+    "raster:spatial_resolution": [
+      2.4606249999997285
+    ],
+    "proj:code": [
+      "EPSG:2232"
+    ]
+  },
+  "assets": {
+    "geoparquet-items": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "STAC items as GeoParquet",
+      "file:size": 24229,
+      "file:checksum": "12203992cb8901f743b93254b3ac7e47923518c8ef65279bd2249cf74dbbf0fa13d8",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "./1yr/1yr_DV.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 11397,
+      "file:checksum": "12205053e4f60f59eecde199bd4a488d9c7e8e44d0c493a29cb656fcd99b720f58c3",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

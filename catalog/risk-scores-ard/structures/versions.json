@@ -1,0 +1,66 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-11-14T22:15:28.363894Z",
+      "breaking": false,
+      "assets": {
+        "FR_structures.parquet": {
+          "sha256": "1971848a4de7c3cc4669b307e2b655071bc5bdd5a65127ba03bd7c588251be19",
+          "size_bytes": 8115212,
+          "href": "risk-scores-ard/structures/FR_structures.parquet",
+          "source_path": "FR_structures.parquet",
+          "source_mtime": 1794694526.1574903,
+          "mtime": 1794694526.1574903,
+          "feature_count": 20631,
+          "schema_fingerprint": "2af76f45e725460a"
+        },
+        "FR_structures.thumb.jpg": {
+          "sha256": "757abda4a157a1a5ba1bf6a56c86bafe8bbd8cd396e16691a926c76a4da02645",
+          "size_bytes": 13366,
+          "href": "risk-scores-ard/structures/FR_structures.thumb.jpg",
+          "mtime": 1794694528.2842095
+        }
+      },
+      "changes": [
+        "FR_structures.parquet",
+        "FR_structures.thumb.jpg"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-11-14T23:19:37.377098Z",
+      "breaking": false,
+      "assets": {
+        "FR_structures.parquet": {
+          "sha256": "1971848a4de7c3cc4669b307e2b655071bc5bdd5a65127ba03bd7c588251be19",
+          "size_bytes": 8115212,
+          "href": "risk-scores-ard/structures/FR_structures.parquet",
+          "source_path": "FR_structures.parquet",
+          "source_mtime": 1794694526.1574903,
+          "mtime": 1794694526.1574903,
+          "feature_count": 20631,
+          "schema_fingerprint": "2af76f45e725460a"
+        },
+        "FR_structures.thumb.jpg": {
+          "sha256": "757abda4a157a1a5ba1bf6a56c86bafe8bbd8cd396e16691a926c76a4da02645",
+          "size_bytes": 13366,
+          "href": "risk-scores-ard/structures/FR_structures.thumb.jpg",
+          "mtime": 1794698377.2887425
+        },
+        "FR_structures.pmtiles": {
+          "sha256": "eed78926edfde68706e6e0b9f1bd71304126b8d7b9ae5594c3e1cfc0d6cf6579",
+          "size_bytes": 38474303,
+          "href": "risk-scores-ard/structures/FR_structures.pmtiles",
+          "mtime": 1794698376.6121972
+        }
+      },
+      "changes": [
+        "FR_structures.pmtiles"
+      ],
+      "message": "Generated PMTiles and thumbnail: FR_structures.pmtiles, FR_structures.thumb.jpg"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+# Hazard Velocity
+
+Hazard Velocity
+
+![flood](https://img.shields.io/badge/flood-blue) ![flood hazard](https://img.shields.io/badge/flood_hazard-blue) ![flood risk](https://img.shields.io/badge/flood_risk-blue) ![floodplain](https://img.shields.io/badge/floodplain-blue) ![depth](https://img.shields.io/badge/depth-blue) ![velocity](https://img.shields.io/badge/velocity-blue) ![annual exceedance probability](https://img.shields.io/badge/annual_exceedance_probability-blue) ![stormwater](https://img.shields.io/badge/stormwater-blue) ![hydrology](https://img.shields.io/badge/hydrology-blue) ![Second Creek](https://img.shields.io/badge/Second_Creek-blue) ![Third Creek](https://img.shields.io/badge/Third_Creek-blue) ![Denver](https://img.shields.io/badge/Denver-blue)
+
+## Spatial Coverage
+
+- **Bounding Box**: [-104.88526419603444, 39.748340125935506, -104.64645583970847, 40.021185063425854]
+- **CRS**: EPSG:2232
+
+## Temporal Coverage
+
+- **Start**: open
+- **End**: ongoing
+
+## Bands
+
+| Band | Name | Data Type | Nodata | Min | Max | Mean | Std Dev |
+|------|------|-----------|--------|------|------|------|---------|
+| 1 | band_1 | float32 | -9999.0 | 0.0021712298039347 | 3.3105752468109 | 0.52952748631489 | 0.38702206775799 |
+
+## Files
+
+| File | Size | Checksum |
+|------|------|----------|
+| 1yr/1yr_V.tif | 303.8 MB | 12200d53c508... |
+| 1yr/1yr_V.thumb.jpg | 18.7 KB | 122006a48be2... |
+| 10yr/10yr_V.tif | 409.7 MB | 1220479839f2... |
+| 10yr/10yr_V.thumb.jpg | 18.8 KB | 1220bad91390... |
+| 100yr/100yr_V.tif | 550.9 MB | 1220f4dcdf2f... |
+| 100yr/100yr_V.thumb.jpg | 18.6 KB | 122072924931... |
+| 1000yr/1000yr_V.tif | 677.1 MB | 12208e0e6510... |
+| 1000yr/1000yr_V.thumb.jpg | 18.0 KB | 1220c299fcb1... |
+| 200yr/200yr_V.tif | 591.5 MB | 1220a1447ae0... |
+| 200yr/200yr_V.thumb.jpg | 18.5 KB | 1220b24d28a1... |
+| 2yr/2yr_V.tif | 330.5 MB | 1220e42ccb3f... |
+| 2yr/2yr_V.thumb.jpg | 18.7 KB | 1220dfa34ae6... |
+| 25yr/25yr_V.tif | 473.6 MB | 12208f12e398... |
+| 25yr/25yr_V.thumb.jpg | 18.7 KB | 1220fc7216ff... |
+| 300yr/300yr_V.tif | 613.6 MB | 1220a748d978... |
+| 300yr/300yr_V.thumb.jpg | 18.4 KB | 1220fe255e54... |
+| 50yr/50yr_V.tif | 512.1 MB | 12207bda5f11... |
+| 50yr/50yr_V.thumb.jpg | 18.6 KB | 1220d9b1fd6b... |
+| 500yr/500yr_V.tif | 641.6 MB | 1220143523c3... |
+| 500yr/500yr_V.thumb.jpg | 18.3 KB | 12201002ad56... |
+| 400yr/400yr_V.tif | 629.3 MB | 12206312df3c... |
+| 400yr/400yr_V.thumb.jpg | 18.4 KB | 1220d305f66e... |
+| 5yr/5yr_V.tif | 374.3 MB | 122023a604e1... |
+| 5yr/5yr_V.thumb.jpg | 18.8 KB | 1220c4d63ec1... |
+| 750yr/750yr_V.tif | 662.6 MB | 12208dd1367e... |
+| 750yr/750yr_V.thumb.jpg | 18.2 KB | 1220146d9cfe... |
+
+## Quick Start
+
+```python
+import rasterio
+
+with rasterio.open("image.tif") as src:
+    data = src.read(1)
+    print(f"Shape: {data.shape}, CRS: {src.crs}")
+```
+
+## STAC Metadata
+
+- **root**: `../catalog.json`
+- **parent**: `../catalog.json`
+
+## Processing Notes
+
+Final outputs of the MHFD Flood Risk Program for Second and Third Creek, produced by Michael Baker International. Raster files (COG) and vector files (GeoParquet v1.1.0) were confirmed cloud-native in a format pre-flight on 2026-11-14 using portolan check --geo-assets, rio cogeo validate, and gpio inspect. Floodplain layers were originally delivered as GeoPackage (.gpkg) and converted to GeoParquet using portolan check --fix on 2026-11-14. LAT and LONG columns were dropped from risk/FR_scores_presentation/ files (structure_risk.parquet, transit_risk.parquet) because the geometry column carries the same information. PMTiles generated from GeoParquet for all vector collections. Rasters reused as delivered (all 44 TIFs are valid COGs).
+
+
+## Attribution
+
+Mile High Flood District (MHFD)
+
+## License
+
+[other](https://www.mhfd.org)
+
+## Known Issues
+
+The following column meanings have not been confirmed by MHFD/MBI documentation and are left undescribed until a data dictionary is provided: OCC_CLS and PRIM_OCC (FR_structures.parquet) — occupancy classification code list unknown; occtype (structure_risk.parquet) — code list unknown; found_type (structure_risk.parquet) — foundation type codes unknown; impact_factor (FR_structures, structure_risk, transit_risk, FR_trails) — definition and scale unknown; FR_score_P and FR_score_F (structure_risk, transit_risk) — meaning of P and F suffixes unknown; bldg_type (FR_structures) — code list unknown; priority_level (FR_critical_facilities) — values and meaning unknown; source_aggregate, source_category1, source_category2 (FR_critical_facilities) — classification taxonomy unknown. Raster pixel units (depth in feet or meters, velocity units, AEP scale, DV units) have not been confirmed from project documentation. Many of the 100+ columns in the ARD files (FR_structures 175 cols, FR_roads 111, FR_critical_facilities 121, FR_trails 91) lack descriptions pending a full data dictionary from MHFD/MBI.
+
+
+---
+
+*Generated by [Portolan](https://github.com/portolan-sdi/portolan-cli) from STAC metadata and .portolan/metadata.yaml*

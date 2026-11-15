@@ -1,0 +1,129 @@
+{
+  "type": "Collection",
+  "id": "risk-drivers",
+  "stac_version": "1.1.0",
+  "description": "Risk Drivers",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./transit/transit.json",
+      "type": "application/geo+json",
+      "title": "Transit"
+    },
+    {
+      "rel": "item",
+      "href": "./structures/structures.json",
+      "type": "application/geo+json",
+      "title": "Structures"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.mhfd.org",
+      "title": "License"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "via",
+      "href": "https://denver-automation-analytics.github.io/mhfd_risk_receptors/",
+      "type": "text/html",
+      "title": "Original source"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
+  ],
+  "updated": "2026-11-14T23:48:57Z",
+  "title": "Risk Drivers",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -104.88526419603444,
+          39.748340125935506,
+          -104.64645583970847,
+          40.021185063425854
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Mile High Flood District",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://www.mhfd.org"
+    },
+    {
+      "name": "Michael Baker International",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://www.mbakerintl.com"
+    }
+  ],
+  "summaries": {
+    "raster:spatial_resolution": [
+      2.4606249999997285
+    ],
+    "proj:code": [
+      "EPSG:2232"
+    ]
+  },
+  "assets": {
+    "geoparquet-items": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "STAC items as GeoParquet",
+      "file:size": 22127,
+      "file:checksum": "1220363ccae2eb7d653ce52e0a9c3c0209263f07d4ff0833abeae62519eb46167d5e",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "./transit/risk_driver_transit.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 18202,
+      "file:checksum": "1220207e497c5919ffbcd762eecc74c1f2e54800639c5f9f3aad3cdbe48045528f1b",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

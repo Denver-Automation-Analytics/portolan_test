@@ -1,0 +1,165 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "id": "transit",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -104.88526419603444,
+          39.748340125935506
+        ],
+        [
+          -104.88526419603444,
+          40.021185063425854
+        ],
+        [
+          -104.64645583970847,
+          40.021185063425854
+        ],
+        [
+          -104.64645583970847,
+          39.748340125935506
+        ],
+        [
+          -104.88526419603444,
+          39.748340125935506
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -104.88526419603444,
+    39.748340125935506,
+    -104.64645583970847,
+    40.021185063425854
+  ],
+  "properties": {
+    "raster:spatial_resolution": 2.4606249999997285,
+    "title": "Transit",
+    "start_datetime": "1900-01-01T00:00:00Z",
+    "end_datetime": "9999-12-31T23:59:59Z",
+    "proj:code": "EPSG:2232",
+    "proj:bbox": [
+      3172851.8268881473,
+      1698581.5905908789,
+      3239074.62751314,
+      1797444.5818408679
+    ],
+    "proj:shape": [
+      40178,
+      26913
+    ],
+    "proj:transform": [
+      3172851.8268881473,
+      2.4606249999997285,
+      0.0,
+      1797444.5818408679,
+      0.0,
+      -2.4606249999997285
+    ],
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "./risk_driver_transit.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:size": 105554528,
+      "file:checksum": "12203fbd9febe96d4ed4ea501e8497a9714568b8ce7ba2b695f2d95b058527c0aac2",
+      "render:colormap_name": "viridis",
+      "bands": [
+        {
+          "name": "band_1",
+          "data_type": "int16",
+          "nodata": -9999.0,
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 13.0,
+            "mean": 4.7043670429554,
+            "stddev": 5.0654326629864
+          }
+        },
+        {
+          "name": "band_2",
+          "data_type": "int16",
+          "nodata": -9999.0,
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 13.0,
+            "mean": 0.003224087095882,
+            "stddev": 0.13182273873033
+          }
+        },
+        {
+          "name": "band_3",
+          "data_type": "int16",
+          "nodata": -9999.0,
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 13.0,
+            "mean": 0.35901105991685,
+            "stddev": 1.5894340474293
+          }
+        },
+        {
+          "name": "band_4",
+          "data_type": "int16",
+          "nodata": -9999.0,
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 13.0,
+            "mean": 0.16286517427897,
+            "stddev": 1.0927433572215
+          }
+        },
+        {
+          "name": "band_5",
+          "data_type": "int16",
+          "nodata": -9999.0,
+          "statistics": {
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "mean": 2.8092166375323,
+            "stddev": 1.9455276047142
+          }
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "thumbnail": {
+      "href": "./risk_driver_transit.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 18202,
+      "file:checksum": "1220207e497c5919ffbcd762eecc74c1f2e54800639c5f9f3aad3cdbe48045528f1b",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "risk-drivers"
+}

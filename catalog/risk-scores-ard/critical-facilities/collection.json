@@ -1,0 +1,646 @@
+{
+  "type": "Collection",
+  "id": "risk-scores-ard/critical-facilities",
+  "stac_version": "1.1.0",
+  "description": "Critical Facilities",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.mhfd.org",
+      "title": "License"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "./FR_critical_facilities.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "pmtiles:layers": [
+        "FR_critical_facilities"
+      ]
+    },
+    {
+      "rel": "via",
+      "href": "https://denver-automation-analytics.github.io/mhfd_risk_receptors/",
+      "type": "text/html",
+      "title": "Original source"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "updated": "2026-11-14T23:49:43Z",
+  "geoparquet:geometry_type": [
+    "MultiPolygon",
+    "Polygon"
+  ],
+  "geoparquet:feature_count": 136,
+  "table:row_count": 136,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "OBJECTID",
+      "type": "double"
+    },
+    {
+      "name": "critical_facility_name",
+      "type": "string"
+    },
+    {
+      "name": "critical_facility_address",
+      "type": "string"
+    },
+    {
+      "name": "source_aggregate",
+      "type": "string"
+    },
+    {
+      "name": "source_category1",
+      "type": "string"
+    },
+    {
+      "name": "source_category2",
+      "type": "string"
+    },
+    {
+      "name": "source_agency",
+      "type": "string"
+    },
+    {
+      "name": "source_download_date",
+      "type": "double"
+    },
+    {
+      "name": "source_download",
+      "type": "string"
+    },
+    {
+      "name": "is_data_agreement",
+      "type": "double"
+    },
+    {
+      "name": "priority_level",
+      "type": "string"
+    },
+    {
+      "name": "created_user",
+      "type": "string"
+    },
+    {
+      "name": "created_date",
+      "type": "double"
+    },
+    {
+      "name": "last_edited_user",
+      "type": "string"
+    },
+    {
+      "name": "last_edited_date",
+      "type": "double"
+    },
+    {
+      "name": "impact_factor",
+      "type": "int64"
+    },
+    {
+      "name": "occtype",
+      "type": "string"
+    },
+    {
+      "name": "sqft",
+      "type": "double"
+    },
+    {
+      "name": "bldg_type",
+      "type": "string"
+    },
+    {
+      "name": "found_type",
+      "type": "string"
+    },
+    {
+      "name": "num_story",
+      "type": "double"
+    },
+    {
+      "name": "val_struct",
+      "type": "double"
+    },
+    {
+      "name": "med_yr_blt",
+      "type": "double"
+    },
+    {
+      "name": "est_total_pop",
+      "type": "double"
+    },
+    {
+      "name": "PROP_ADDR",
+      "type": "string"
+    },
+    {
+      "name": "PROP_CITY",
+      "type": "string"
+    },
+    {
+      "name": "PROP_ST",
+      "type": "string"
+    },
+    {
+      "name": "PROP_ZIP",
+      "type": "string"
+    },
+    {
+      "name": "x",
+      "type": "double"
+    },
+    {
+      "name": "y",
+      "type": "double"
+    },
+    {
+      "name": "is_anchor",
+      "type": "bool"
+    },
+    {
+      "name": "association_type",
+      "type": "string"
+    },
+    {
+      "name": "distance",
+      "type": "double"
+    },
+    {
+      "name": "duplicate_count",
+      "type": "int64"
+    },
+    {
+      "name": "receptor_id",
+      "type": "string"
+    },
+    {
+      "name": "depth_1000_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_750_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_500_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_400_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_300_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_200_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_100_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_50_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_25_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_10_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_5_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_2_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_1_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_1000_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_750_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_500_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_400_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_300_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_200_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_100_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_50_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_25_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_10_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_5_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_2_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_1_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_1000_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_750_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_500_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_400_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_300_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_200_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_100_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_50_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_25_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_10_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_5_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_2_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_1_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_1000_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_750_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_500_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_400_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_300_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_200_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_100_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_50_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_25_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_10_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_5_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_2_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_1_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_1000_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_750_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_500_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_400_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_300_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_200_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_100_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_50_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_25_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_10_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_5_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_2_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_1_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_1000_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_750_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_500_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_400_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_300_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_200_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_100_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_50_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_25_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_10_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_5_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_2_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_1_max",
+      "type": "double"
+    },
+    {
+      "name": "flood_risk_depth_max",
+      "type": "double"
+    },
+    {
+      "name": "flood_risk_velocity_max",
+      "type": "double"
+    },
+    {
+      "name": "flood_risk_depth_velocity_max",
+      "type": "double"
+    },
+    {
+      "name": "flood_risk_max",
+      "type": "double"
+    },
+    {
+      "name": "FR_score_P",
+      "type": "double"
+    },
+    {
+      "name": "FR_score_F",
+      "type": "double"
+    },
+    {
+      "name": "receptors_version",
+      "type": "string"
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "bbox",
+      "type": "struct<xmin: double, ymin: double, xmax: double, ymax: double>"
+    }
+  ],
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 16,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -104.7683715,
+    39.802206,
+    16
+  ],
+  "pmtiles:layers": [
+    "FR_critical_facilities"
+  ],
+  "title": "Critical Facilities",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -104.8378269,
+          39.789515,
+          -104.664945,
+          39.969575
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Mile High Flood District",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://www.mhfd.org"
+    },
+    {
+      "name": "Michael Baker International",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://www.mbakerintl.com"
+    }
+  ],
+  "assets": {
+    "FR_critical_facilities": {
+      "href": "./FR_critical_facilities.parquet",
+      "type": "application/vnd.apache.parquet",
+      "file:size": 122029,
+      "file:checksum": "12201f860081c93e1007c41321545f42552bf332df699385935609e4e414d8f6410b",
+      "roles": [
+        "data"
+      ]
+    },
+    "thumbnail": {
+      "href": "./FR_critical_facilities.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 5279,
+      "file:checksum": "12204dd7f41ec40fc6c9a83d3e683901c10ba83407e224e4cdd0b08fb82dc27f5c46",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "FR_critical_facilities-tiles": {
+      "href": "./FR_critical_facilities.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "FR_critical_facilities (vector tiles)",
+      "file:size": 450486,
+      "file:checksum": "1220b7fed50dcfb5d470ce7a0ea77bebf4ef569e91a57df1a52bb211efa65aea4c5d",
+      "roles": [
+        "visual"
+      ]
+    },
+    "styles/default": {
+      "href": "./styles/default.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Default",
+      "file:size": 499,
+      "file:checksum": "1220ee2ac595afca87397a6b852e6918168531c1fd2483c16fb8974c78829855462c",
+      "roles": [
+        "style",
+        "default"
+      ]
+    }
+  }
+}

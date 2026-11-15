@@ -1,0 +1,66 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-11-14T22:15:28.360386Z",
+      "breaking": false,
+      "assets": {
+        "FR_critical_facilities.parquet": {
+          "sha256": "1f860081c93e1007c41321545f42552bf332df699385935609e4e414d8f6410b",
+          "size_bytes": 122029,
+          "href": "risk-scores-ard/critical-facilities/FR_critical_facilities.parquet",
+          "source_path": "FR_critical_facilities.parquet",
+          "source_mtime": 1794694525.7366538,
+          "mtime": 1794694525.7366538,
+          "feature_count": 136,
+          "schema_fingerprint": "0c9fb7d869b65f5d"
+        },
+        "FR_critical_facilities.thumb.jpg": {
+          "sha256": "4dd7f41ec40fc6c9a83d3e683901c10ba83407e224e4cdd0b08fb82dc27f5c46",
+          "size_bytes": 5279,
+          "href": "risk-scores-ard/critical-facilities/FR_critical_facilities.thumb.jpg",
+          "mtime": 1794694527.4525676
+        }
+      },
+      "changes": [
+        "FR_critical_facilities.parquet",
+        "FR_critical_facilities.thumb.jpg"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-11-14T23:20:00.910077Z",
+      "breaking": false,
+      "assets": {
+        "FR_critical_facilities.parquet": {
+          "sha256": "1f860081c93e1007c41321545f42552bf332df699385935609e4e414d8f6410b",
+          "size_bytes": 122029,
+          "href": "risk-scores-ard/critical-facilities/FR_critical_facilities.parquet",
+          "source_path": "FR_critical_facilities.parquet",
+          "source_mtime": 1794694525.7366538,
+          "mtime": 1794694525.7366538,
+          "feature_count": 136,
+          "schema_fingerprint": "0c9fb7d869b65f5d"
+        },
+        "FR_critical_facilities.thumb.jpg": {
+          "sha256": "4dd7f41ec40fc6c9a83d3e683901c10ba83407e224e4cdd0b08fb82dc27f5c46",
+          "size_bytes": 5279,
+          "href": "risk-scores-ard/critical-facilities/FR_critical_facilities.thumb.jpg",
+          "mtime": 1794698400.8633327
+        },
+        "FR_critical_facilities.pmtiles": {
+          "sha256": "b7fed50dcfb5d470ce7a0ea77bebf4ef569e91a57df1a52bb211efa65aea4c5d",
+          "size_bytes": 450486,
+          "href": "risk-scores-ard/critical-facilities/FR_critical_facilities.pmtiles",
+          "mtime": 1794698400.3648002
+        }
+      },
+      "changes": [
+        "FR_critical_facilities.pmtiles"
+      ],
+      "message": "Generated PMTiles and thumbnail: FR_critical_facilities.pmtiles, FR_critical_facilities.thumb.jpg"
+    }
+  ]
+}

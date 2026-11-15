@@ -1,0 +1,25 @@
+{
+  "version": 8,
+  "name": "Default",
+  "sources": {
+    "data": {
+      "type": "vector",
+      "url": "pmtiles://../transit_risk.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 17
+    }
+  },
+  "layers": [
+    {
+      "id": "transit_risk-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "transit_risk",
+      "paint": {
+        "fill-color": "#3388ff",
+        "fill-opacity": 0.6,
+        "fill-outline-color": "#2266cc"
+      }
+    }
+  ]
+}

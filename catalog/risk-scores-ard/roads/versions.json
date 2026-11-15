@@ -1,0 +1,66 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-11-14T22:15:28.362347Z",
+      "breaking": false,
+      "assets": {
+        "FR_roads.parquet": {
+          "sha256": "738e971e559c9a8b12c90cfcad55bb5e3279061d258a69681775ebaa08983353",
+          "size_bytes": 8966001,
+          "href": "risk-scores-ard/roads/FR_roads.parquet",
+          "source_path": "FR_roads.parquet",
+          "source_mtime": 1794694526.0122273,
+          "mtime": 1794694526.0122273,
+          "feature_count": 2767,
+          "schema_fingerprint": "bc5319042d8511c8"
+        },
+        "FR_roads.thumb.jpg": {
+          "sha256": "434edfe6dd4cb5d604f84368ee5ef43e72024da86edd0e1dca10379aa20617ac",
+          "size_bytes": 18871,
+          "href": "risk-scores-ard/roads/FR_roads.thumb.jpg",
+          "mtime": 1794694528.0242162
+        }
+      },
+      "changes": [
+        "FR_roads.parquet",
+        "FR_roads.thumb.jpg"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-11-14T23:19:55.926798Z",
+      "breaking": false,
+      "assets": {
+        "FR_roads.parquet": {
+          "sha256": "738e971e559c9a8b12c90cfcad55bb5e3279061d258a69681775ebaa08983353",
+          "size_bytes": 8966001,
+          "href": "risk-scores-ard/roads/FR_roads.parquet",
+          "source_path": "FR_roads.parquet",
+          "source_mtime": 1794694526.0122273,
+          "mtime": 1794694526.0122273,
+          "feature_count": 2767,
+          "schema_fingerprint": "bc5319042d8511c8"
+        },
+        "FR_roads.thumb.jpg": {
+          "sha256": "434edfe6dd4cb5d604f84368ee5ef43e72024da86edd0e1dca10379aa20617ac",
+          "size_bytes": 18871,
+          "href": "risk-scores-ard/roads/FR_roads.thumb.jpg",
+          "mtime": 1794698395.8610508
+        },
+        "FR_roads.pmtiles": {
+          "sha256": "60a9badafbef51f6e81ecb44fc109d88e00b0c08dee97b6405bf4cd43661c353",
+          "size_bytes": 12179692,
+          "href": "risk-scores-ard/roads/FR_roads.pmtiles",
+          "mtime": 1794698394.8241065
+        }
+      },
+      "changes": [
+        "FR_roads.pmtiles"
+      ],
+      "message": "Generated PMTiles and thumbnail: FR_roads.pmtiles, FR_roads.thumb.jpg"
+    }
+  ]
+}

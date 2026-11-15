@@ -1,0 +1,38 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-11-14T22:12:59.980918Z",
+      "breaking": false,
+      "assets": {
+        "aep-grid/aep_grid.thumb.jpg": {
+          "sha256": "fd525abc721c54d9acbec0df6a94ad3de7f1e32fff5e76ae2bfd19ad6ae50ad9",
+          "size_bytes": 18330,
+          "href": "hazard-aep/aep-grid/aep_grid.thumb.jpg",
+          "mtime": 1794694379.2530918
+        },
+        "aep-grid/aep_grid.tif": {
+          "sha256": "575c9d41a9f03006edfe2b8ef411326822d734842fef616a2d520e4add148fdf",
+          "size_bytes": 182073512,
+          "href": "hazard-aep/aep-grid/aep_grid.tif",
+          "source_path": "aep-grid/aep_grid.tif",
+          "mtime": 1792672226.7288327
+        },
+        "items.parquet": {
+          "sha256": "5276bb9ca601b9b5d1f38d52cbbc26bbfeca167d4d40ed57253877740827d6b7",
+          "size_bytes": 21539,
+          "href": "hazard-aep/items.parquet",
+          "mtime": 1794694379.9329245,
+          "source_fingerprint": "f07061a391dc082582586be47f604350c014928fda057c20095416f49e01a404"
+        }
+      },
+      "changes": [
+        "aep-grid/aep_grid.thumb.jpg",
+        "aep-grid/aep_grid.tif",
+        "items.parquet"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-11-14T22:33:11.622978Z",
+      "breaking": false,
+      "assets": {
+        "aggregated_flood_risk_500m.parquet": {
+          "sha256": "c44959e93d2d60568d89f9751b13e33e6255bf8c2f97f77fe6cfe911d43353da",
+          "size_bytes": 1462508,
+          "href": "risk-scores-grid/res-500m/aggregated_flood_risk_500m.parquet",
+          "source_path": "aggregated_flood_risk_500m.parquet",
+          "source_mtime": 1794694531.0690312,
+          "mtime": 1794694531.0690312,
+          "feature_count": 23904,
+          "schema_fingerprint": "ba22e4b729ed835a"
+        },
+        "aggregated_flood_risk_500m.thumb.jpg": {
+          "sha256": "b0bd55003f7c222bb5110c863fbf207e3c30d5cc68e13ea553f794a09dea4cc2",
+          "size_bytes": 45331,
+          "href": "risk-scores-grid/res-500m/aggregated_flood_risk_500m.thumb.jpg",
+          "mtime": 1794695591.5928473
+        }
+      },
+      "changes": [
+        "aggregated_flood_risk_500m.parquet",
+        "aggregated_flood_risk_500m.thumb.jpg"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-11-14T23:20:18.813654Z",
+      "breaking": false,
+      "assets": {
+        "aggregated_flood_risk_500m.parquet": {
+          "sha256": "c44959e93d2d60568d89f9751b13e33e6255bf8c2f97f77fe6cfe911d43353da",
+          "size_bytes": 1462508,
+          "href": "risk-scores-grid/res-500m/aggregated_flood_risk_500m.parquet",
+          "source_path": "aggregated_flood_risk_500m.parquet",
+          "source_mtime": 1794694531.0690312,
+          "mtime": 1794694531.0690312,
+          "feature_count": 23904,
+          "schema_fingerprint": "ba22e4b729ed835a"
+        },
+        "aggregated_flood_risk_500m.thumb.jpg": {
+          "sha256": "b0bd55003f7c222bb5110c863fbf207e3c30d5cc68e13ea553f794a09dea4cc2",
+          "size_bytes": 45331,
+          "href": "risk-scores-grid/res-500m/aggregated_flood_risk_500m.thumb.jpg",
+          "mtime": 1794698418.7566783
+        },
+        "aggregated_flood_risk_500m.pmtiles": {
+          "sha256": "422c055a21d11387be096e99c54171c96bae5f6f9b139ab84c5c1437f12c4888",
+          "size_bytes": 1901176,
+          "href": "risk-scores-grid/res-500m/aggregated_flood_risk_500m.pmtiles",
+          "mtime": 1794698418.1809895
+        }
+      },
+      "changes": [
+        "aggregated_flood_risk_500m.pmtiles"
+      ],
+      "message": "Generated PMTiles and thumbnail: aggregated_flood_risk_500m.pmtiles, aggregated_flood_risk_500m.thumb.jpg"
+    }
+  ]
+}

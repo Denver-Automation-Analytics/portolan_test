@@ -1,0 +1,112 @@
+{
+  "type": "Catalog",
+  "id": "hazard-floodplains",
+  "stac_version": "1.1.0",
+  "title": "Hazard Floodplains",
+  "description": "Catalog: hazard-floodplains",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./rp-1yr/collection.json",
+      "type": "application/json",
+      "title": "Rp 1yr"
+    },
+    {
+      "rel": "child",
+      "href": "./rp-10yr/collection.json",
+      "type": "application/json",
+      "title": "Rp 10yr"
+    },
+    {
+      "rel": "child",
+      "href": "./rp-100yr/collection.json",
+      "type": "application/json",
+      "title": "Rp 100yr"
+    },
+    {
+      "rel": "child",
+      "href": "./rp-1000yr/collection.json",
+      "type": "application/json",
+      "title": "Rp 1000yr"
+    },
+    {
+      "rel": "child",
+      "href": "./rp-200yr/collection.json",
+      "type": "application/json",
+      "title": "Rp 200yr"
+    },
+    {
+      "rel": "child",
+      "href": "./rp-2yr/collection.json",
+      "type": "application/json",
+      "title": "Rp 2yr"
+    },
+    {
+      "rel": "child",
+      "href": "./rp-25yr/collection.json",
+      "type": "application/json",
+      "title": "Rp 25yr"
+    },
+    {
+      "rel": "child",
+      "href": "./rp-300yr/collection.json",
+      "type": "application/json",
+      "title": "Rp 300yr"
+    },
+    {
+      "rel": "child",
+      "href": "./rp-400yr/collection.json",
+      "type": "application/json",
+      "title": "Rp 400yr"
+    },
+    {
+      "rel": "child",
+      "href": "./rp-50yr/collection.json",
+      "type": "application/json",
+      "title": "Rp 50yr"
+    },
+    {
+      "rel": "child",
+      "href": "./rp-500yr/collection.json",
+      "type": "application/json",
+      "title": "Rp 500yr"
+    },
+    {
+      "rel": "child",
+      "href": "./rp-5yr/collection.json",
+      "type": "application/json",
+      "title": "Rp 5yr"
+    },
+    {
+      "rel": "child",
+      "href": "./rp-750yr/collection.json",
+      "type": "application/json",
+      "title": "Rp 750yr"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    }
+  ],
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
+  ]
+}

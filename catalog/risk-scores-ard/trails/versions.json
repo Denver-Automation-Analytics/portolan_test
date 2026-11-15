@@ -1,0 +1,66 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-11-14T22:15:28.365568Z",
+      "breaking": false,
+      "assets": {
+        "FR_trails.parquet": {
+          "sha256": "be98ac87633a5ba29783110618ed0ff181efea20c20759fd51958c7a511f0563",
+          "size_bytes": 1185029,
+          "href": "risk-scores-ard/trails/FR_trails.parquet",
+          "source_path": "FR_trails.parquet",
+          "source_mtime": 1794694525.7884607,
+          "mtime": 1794694525.7884607,
+          "feature_count": 10117,
+          "schema_fingerprint": "5224341ea9bf09e8"
+        },
+        "FR_trails.thumb.jpg": {
+          "sha256": "a9f0c93c9693847b5c2f212f3b765783aa89209f873a4252c31d3a0417536975",
+          "size_bytes": 5464,
+          "href": "risk-scores-ard/trails/FR_trails.thumb.jpg",
+          "mtime": 1794694528.3404076
+        }
+      },
+      "changes": [
+        "FR_trails.parquet",
+        "FR_trails.thumb.jpg"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-11-14T23:20:13.050993Z",
+      "breaking": false,
+      "assets": {
+        "FR_trails.parquet": {
+          "sha256": "be98ac87633a5ba29783110618ed0ff181efea20c20759fd51958c7a511f0563",
+          "size_bytes": 1185029,
+          "href": "risk-scores-ard/trails/FR_trails.parquet",
+          "source_path": "FR_trails.parquet",
+          "source_mtime": 1794694525.7884607,
+          "mtime": 1794694525.7884607,
+          "feature_count": 10117,
+          "schema_fingerprint": "5224341ea9bf09e8"
+        },
+        "FR_trails.thumb.jpg": {
+          "sha256": "a9f0c93c9693847b5c2f212f3b765783aa89209f873a4252c31d3a0417536975",
+          "size_bytes": 5464,
+          "href": "risk-scores-ard/trails/FR_trails.thumb.jpg",
+          "mtime": 1794698413.0047376
+        },
+        "FR_trails.pmtiles": {
+          "sha256": "da86710a9d8a4ed49437ba871f95db30aec9c8ad46d91fc72be044d93e144359",
+          "size_bytes": 6092076,
+          "href": "risk-scores-ard/trails/FR_trails.pmtiles",
+          "mtime": 1794698412.5810826
+        }
+      },
+      "changes": [
+        "FR_trails.pmtiles"
+      ],
+      "message": "Generated PMTiles and thumbnail: FR_trails.pmtiles, FR_trails.thumb.jpg"
+    }
+  ]
+}

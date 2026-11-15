@@ -1,0 +1,66 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-11-14T22:33:08.384042Z",
+      "breaking": false,
+      "assets": {
+        "5yr_FP.parquet": {
+          "sha256": "9f74038e2ea13da1d5203bbee29cdcf9ab699b89970519022906d83c7f6aef4d",
+          "size_bytes": 19893342,
+          "href": "hazard-floodplains/rp-5yr/5yr_FP.parquet",
+          "source_path": "5yr_FP.parquet",
+          "source_mtime": 1794691841.2341058,
+          "mtime": 1794691841.2341058,
+          "feature_count": 2503,
+          "schema_fingerprint": "d7a35634501b9496"
+        },
+        "5yr_FP.thumb.jpg": {
+          "sha256": "25144923c790ca02d8c98550d3e65db53598fc58c05b26f7adf9a441c16da2e2",
+          "size_bytes": 27925,
+          "href": "hazard-floodplains/rp-5yr/5yr_FP.thumb.jpg",
+          "mtime": 1794695586.938772
+        }
+      },
+      "changes": [
+        "5yr_FP.parquet",
+        "5yr_FP.thumb.jpg"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-11-14T23:21:49.971797Z",
+      "breaking": false,
+      "assets": {
+        "5yr_FP.parquet": {
+          "sha256": "9f74038e2ea13da1d5203bbee29cdcf9ab699b89970519022906d83c7f6aef4d",
+          "size_bytes": 19893342,
+          "href": "hazard-floodplains/rp-5yr/5yr_FP.parquet",
+          "source_path": "5yr_FP.parquet",
+          "source_mtime": 1794691841.2341058,
+          "mtime": 1794691841.2341058,
+          "feature_count": 2503,
+          "schema_fingerprint": "d7a35634501b9496"
+        },
+        "5yr_FP.thumb.jpg": {
+          "sha256": "25144923c790ca02d8c98550d3e65db53598fc58c05b26f7adf9a441c16da2e2",
+          "size_bytes": 27925,
+          "href": "hazard-floodplains/rp-5yr/5yr_FP.thumb.jpg",
+          "mtime": 1794698509.913958
+        },
+        "5yr_FP.pmtiles": {
+          "sha256": "f707fb4e82739743ff0a2eb711fd45baef026c09f67dcfbd6edf37630b03fc27",
+          "size_bytes": 6251737,
+          "href": "hazard-floodplains/rp-5yr/5yr_FP.pmtiles",
+          "mtime": 1794698508.4563916
+        }
+      },
+      "changes": [
+        "5yr_FP.pmtiles"
+      ],
+      "message": "Generated PMTiles and thumbnail: 5yr_FP.pmtiles, 5yr_FP.thumb.jpg"
+    }
+  ]
+}

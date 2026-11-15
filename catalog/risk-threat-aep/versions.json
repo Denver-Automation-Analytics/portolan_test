@@ -1,0 +1,53 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-11-14T22:12:22.392530Z",
+      "breaking": false,
+      "assets": {
+        "transit/threat_aep_grid_transit.thumb.jpg": {
+          "sha256": "1649b48b2c5c14dcff579da3a94da8f1e54d9068794de42a90f9b113a67bea81",
+          "size_bytes": 17690,
+          "href": "risk-threat-aep/transit/threat_aep_grid_transit.thumb.jpg",
+          "mtime": 1794694341.2000656
+        },
+        "transit/threat_aep_grid_transit.tif": {
+          "sha256": "b27265e8cefe3f97ecc803a41f2e3abe774c3b2cf19bd44efd08103ee5a7d5cf",
+          "size_bytes": 411336526,
+          "href": "risk-threat-aep/transit/threat_aep_grid_transit.tif",
+          "source_path": "transit/threat_aep_grid_transit.tif",
+          "mtime": 1792692650.0
+        },
+        "structures/threat_aep_grid_structures.thumb.jpg": {
+          "sha256": "d9753b6b6a91754ac3c551bd1753b94d93004a3514a1e32a49e817fb0c2caeec",
+          "size_bytes": 19085,
+          "href": "risk-threat-aep/structures/threat_aep_grid_structures.thumb.jpg",
+          "mtime": 1794694341.2186115
+        },
+        "structures/threat_aep_grid_structures.tif": {
+          "sha256": "d82e58ab8b9dde6e97e62a8aa9d414b35d2072897498224de707eb99b5aacad7",
+          "size_bytes": 621079886,
+          "href": "risk-threat-aep/structures/threat_aep_grid_structures.tif",
+          "source_path": "structures/threat_aep_grid_structures.tif",
+          "mtime": 1792692650.0
+        },
+        "items.parquet": {
+          "sha256": "1620eceba858426f3e3dbc02453d4f2c9cae54949afcf4998f64cd552f35fc24",
+          "size_bytes": 21985,
+          "href": "risk-threat-aep/items.parquet",
+          "mtime": 1794694342.3438513,
+          "source_fingerprint": "9bcbe6d5ac48da34c5bd9fac1e1cdb1b16e09ad666545eb4fcb4c0b691b63cd3"
+        }
+      },
+      "changes": [
+        "transit/threat_aep_grid_transit.thumb.jpg",
+        "transit/threat_aep_grid_transit.tif",
+        "structures/threat_aep_grid_structures.thumb.jpg",
+        "structures/threat_aep_grid_structures.tif",
+        "items.parquet"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "id": "1yr",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -104.86938150900997,
+          39.770775386876934
+        ],
+        [
+          -104.86938150900997,
+          39.98824998736982
+        ],
+        [
+          -104.65389011326468,
+          39.98824998736982
+        ],
+        [
+          -104.65389011326468,
+          39.770775386876934
+        ],
+        [
+          -104.86938150900997,
+          39.770775386876934
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -104.86938150900997,
+    39.770775386876934,
+    -104.65389011326468,
+    39.98824998736982
+  ],
+  "properties": {
+    "raster:spatial_resolution": 2.4606249999997285,
+    "title": "1yr",
+    "start_datetime": "1900-01-01T00:00:00Z",
+    "end_datetime": "9999-12-31T23:59:59Z",
+    "proj:code": "EPSG:2232",
+    "proj:bbox": [
+      3177261.2668881468,
+      1706736.101840878,
+      3237103.66688814,
+      1785476.1018408693
+    ],
+    "proj:shape": [
+      32000,
+      24320
+    ],
+    "proj:transform": [
+      3177261.2668881468,
+      2.4606249999997285,
+      0.0,
+      1785476.1018408693,
+      0.0,
+      -2.4606249999997285
+    ],
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "./1yr_D.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:size": 238273182,
+      "file:checksum": "12201901f9ca055d70e79e3913d6138fbb3eab3028d68358c166577ac06db57ede14",
+      "render:colormap_name": "viridis",
+      "bands": [
+        {
+          "name": "band_1",
+          "data_type": "float32",
+          "nodata": -9999.0,
+          "statistics": {
+            "minimum": 0.0009765625,
+            "maximum": 32.088325500488,
+            "mean": 0.38182211591702,
+            "stddev": 0.9801271560071
+          }
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "thumbnail": {
+      "href": "./1yr_D.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 18314,
+      "file:checksum": "1220abfc27e4381cee95a7dd1a58d38a2d8da8d97f8b7f594589f56d42321e608bfb",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "hazard-depth"
+}

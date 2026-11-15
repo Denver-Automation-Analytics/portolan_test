@@ -1,0 +1,47 @@
+# Credentials — never commit
+.env
+*.env
+.env.*
+
+# Data assets — go to S3, not GitHub
+*.tif
+*.tiff
+*.parquet
+*.pmtiles
+*.jpg
+*.jpeg
+*.png
+
+# Source/staging data formats
+*.gpkg
+*.gdb
+*.aux.xml
+*.shp
+*.dbf
+*.shx
+*.prj
+*.cpg
+*.sbn
+*.sbx
+
+# Data directories — staging and original source data
+catalog/data/
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+.venv/
+.venv*/
+
+# Portolan runtime files
+.portolan/.versions.lock
+
+# Local git config (Windows fileMode setting — not repo state)
+.gitconfig
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

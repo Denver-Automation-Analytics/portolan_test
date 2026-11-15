@@ -1,0 +1,173 @@
+{
+  "type": "Collection",
+  "id": "hazard-floodplains/rp-1000yr",
+  "stac_version": "1.1.0",
+  "description": "Rp 1000yr",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.mhfd.org",
+      "title": "License"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "./1000yr_FP.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "pmtiles:layers": [
+        "1000yr_FP"
+      ]
+    },
+    {
+      "rel": "via",
+      "href": "https://denver-automation-analytics.github.io/mhfd_risk_receptors/",
+      "type": "text/html",
+      "title": "Original source"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "updated": "2026-11-14T23:49:37Z",
+  "geoparquet:geometry_type": [
+    "Polygon"
+  ],
+  "geoparquet:feature_count": 2051,
+  "table:row_count": 2051,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "fid",
+      "type": "int64"
+    },
+    {
+      "name": "DN",
+      "type": "int32"
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "bbox",
+      "type": "struct<xmin: double, ymin: double, xmax: double, ymax: double>"
+    }
+  ],
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 16,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -104.784851,
+    39.8949871,
+    16
+  ],
+  "pmtiles:layers": [
+    "1000yr_FP"
+  ],
+  "title": "Rp 1000yr",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -104.8659589,
+          39.773272,
+          -104.656603,
+          39.9872429
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Mile High Flood District",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://www.mhfd.org"
+    },
+    {
+      "name": "Michael Baker International",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://www.mbakerintl.com"
+    }
+  ],
+  "assets": {
+    "1000yr_FP": {
+      "href": "./1000yr_FP.parquet",
+      "type": "application/vnd.apache.parquet",
+      "file:size": 27525827,
+      "file:checksum": "12208234234bcada1a12cce9345a10a8a810be481f2112f11b338df14ecca090def8",
+      "roles": [
+        "data"
+      ]
+    },
+    "thumbnail": {
+      "href": "./1000yr_FP.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 30299,
+      "file:checksum": "1220e5b835826502dc5d7528f329bac0e25a412bc3b5f2fdac31d7909009db0dca86",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "1000yr_FP-tiles": {
+      "href": "./1000yr_FP.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "1000yr_FP (vector tiles)",
+      "file:size": 8367140,
+      "file:checksum": "1220e95fb33d1a795fe15f2262a5ccd715ad2587a3ed691679f41a1f5098add756fe",
+      "roles": [
+        "visual"
+      ]
+    },
+    "styles/default": {
+      "href": "./styles/default.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Default",
+      "file:size": 460,
+      "file:checksum": "122000684782c90798b7849caeeb5c941ce79f4ed9ef916bb816fef07fff2a0a0adf",
+      "roles": [
+        "style",
+        "default"
+      ]
+    }
+  }
+}

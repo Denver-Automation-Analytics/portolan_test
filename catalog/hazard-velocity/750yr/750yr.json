@@ -1,0 +1,121 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "id": "750yr",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -104.88526419603444,
+          39.748340125935506
+        ],
+        [
+          -104.88526419603444,
+          40.021185063425854
+        ],
+        [
+          -104.64645583970847,
+          40.021185063425854
+        ],
+        [
+          -104.64645583970847,
+          39.748340125935506
+        ],
+        [
+          -104.88526419603444,
+          39.748340125935506
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -104.88526419603444,
+    39.748340125935506,
+    -104.64645583970847,
+    40.021185063425854
+  ],
+  "properties": {
+    "raster:spatial_resolution": 2.4606249999997285,
+    "title": "750yr",
+    "start_datetime": "1900-01-01T00:00:00Z",
+    "end_datetime": "9999-12-31T23:59:59Z",
+    "proj:code": "EPSG:2232",
+    "proj:bbox": [
+      3172851.8268881473,
+      1698581.5905908789,
+      3239074.62751314,
+      1797444.5818408679
+    ],
+    "proj:shape": [
+      40178,
+      26913
+    ],
+    "proj:transform": [
+      3172851.8268881473,
+      2.4606249999997285,
+      0.0,
+      1797444.5818408679,
+      0.0,
+      -2.4606249999997285
+    ],
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "./750yr_V.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:size": 694795731,
+      "file:checksum": "12208dd1367ee6d29711d0ceeaf91ee5da32813d492f6c7479bf80db9039235fc045",
+      "render:colormap_name": "viridis",
+      "bands": [
+        {
+          "name": "band_1",
+          "data_type": "float32",
+          "nodata": -9999.0,
+          "statistics": {
+            "minimum": 0.016024209558964,
+            "maximum": 6.190906047821,
+            "mean": 0.95965171930981,
+            "stddev": 0.61659198735335
+          }
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "thumbnail": {
+      "href": "./750yr_V.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 18617,
+      "file:checksum": "1220146d9cfe9aea6399d3c3c6b1e84bdb5fe5b5953d899711dcedaee9ab6461d917",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "hazard-velocity"
+}

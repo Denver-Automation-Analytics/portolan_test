@@ -1,0 +1,260 @@
+{
+  "type": "Collection",
+  "id": "risk-scores-presentation/transit",
+  "stac_version": "1.1.0",
+  "description": "Transit",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.mhfd.org",
+      "title": "License"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "./transit_risk.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "pmtiles:layers": [
+        "transit_risk"
+      ]
+    },
+    {
+      "rel": "via",
+      "href": "https://denver-automation-analytics.github.io/mhfd_risk_receptors/",
+      "type": "text/html",
+      "title": "Original source"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "updated": "2026-11-14T23:49:52Z",
+  "geoparquet:geometry_type": [
+    "MultiPolygon"
+  ],
+  "geoparquet:feature_count": 12884,
+  "table:row_count": 12884,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "OBJECTID",
+      "type": "int64"
+    },
+    {
+      "name": "receptor_id",
+      "type": "string"
+    },
+    {
+      "name": "receptor_type",
+      "type": "string"
+    },
+    {
+      "name": "impact_factor",
+      "type": "double"
+    },
+    {
+      "name": "flood_risk_depth_max",
+      "type": "double"
+    },
+    {
+      "name": "flood_risk_velocity_max",
+      "type": "double"
+    },
+    {
+      "name": "flood_risk_depth_velocity_max",
+      "type": "double"
+    },
+    {
+      "name": "flood_risk_max",
+      "type": "double"
+    },
+    {
+      "name": "FR_score_P",
+      "type": "double"
+    },
+    {
+      "name": "FR_score_F",
+      "type": "double"
+    },
+    {
+      "name": "depth_1_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_2_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_5_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_10_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_25_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_50_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_100_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_200_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_300_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_400_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_500_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_750_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_1000_max",
+      "type": "double"
+    },
+    {
+      "name": "receptors_version",
+      "type": "string"
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "geometry_bbox",
+      "type": "struct<xmin: float not null, ymin: float not null, xmax: float not null, ymax: float not null>"
+    }
+  ],
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 17,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -104.827423,
+    39.900255,
+    17
+  ],
+  "pmtiles:layers": [
+    "transit_risk"
+  ],
+  "title": "Transit",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -104.8713229,
+          39.7763399,
+          -104.6614329,
+          39.987302
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Mile High Flood District",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://www.mhfd.org"
+    },
+    {
+      "name": "Michael Baker International",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://www.mbakerintl.com"
+    }
+  ],
+  "assets": {
+    "transit_risk": {
+      "href": "./transit_risk.parquet",
+      "type": "application/vnd.apache.parquet",
+      "file:size": 17523192,
+      "file:checksum": "1220991485f8037183f198fb284fc1f7464c0b654b50736aa5da866d53061a5c46f7",
+      "roles": [
+        "data"
+      ]
+    },
+    "thumbnail": {
+      "href": "./transit_risk.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 19641,
+      "file:checksum": "122050e9de230171d622ad3e55a74c5fd64d4b5fc3454d6f2fa56c86689d5f6d6119",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "transit_risk-tiles": {
+      "href": "./transit_risk.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "transit_risk (vector tiles)",
+      "file:size": 10735521,
+      "file:checksum": "1220c0ca8874b804a127423f1bb4a171a90d421bbf605586fab007455bcb65a9dfa7",
+      "roles": [
+        "visual"
+      ]
+    },
+    "styles/default": {
+      "href": "./styles/default.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Default",
+      "file:size": 469,
+      "file:checksum": "122003fc1949c4e46733d81fdb53109776f36de52c7adf3477dfdaf7bae14ae4db2b",
+      "roles": [
+        "style",
+        "default"
+      ]
+    }
+  }
+}

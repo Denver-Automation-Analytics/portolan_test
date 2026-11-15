@@ -1,0 +1,218 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-11-14T22:07:37.412126Z",
+      "breaking": false,
+      "assets": {
+        "1yr/1yr_V.thumb.jpg": {
+          "sha256": "06a48be2f4465392fff36c6c724873c5b661c45c17db6128d752e2bfc4130e9f",
+          "size_bytes": 19123,
+          "href": "hazard-velocity/1yr/1yr_V.thumb.jpg",
+          "mtime": 1794693968.2169442
+        },
+        "1yr/1yr_V.tif": {
+          "sha256": "0d53c50866b2c7ffb5a0bcdaacc32d6699cad933dae3dde0a07941e3fc44b998",
+          "size_bytes": 318602194,
+          "href": "hazard-velocity/1yr/1yr_V.tif",
+          "source_path": "1yr/1yr_V.tif",
+          "mtime": 1794693968.076492
+        },
+        "10yr/10yr_V.thumb.jpg": {
+          "sha256": "bad913902beec46bd0a9863b2468265b5d0d91fb95170f6cc48e882b9c7a0978",
+          "size_bytes": 19212,
+          "href": "hazard-velocity/10yr/10yr_V.thumb.jpg",
+          "mtime": 1794693969.572894
+        },
+        "10yr/10yr_V.tif": {
+          "sha256": "479839f242f5034835d0edc41f983b5b905af405a1b294c371d5f49d1f7a3369",
+          "size_bytes": 429570964,
+          "href": "hazard-velocity/10yr/10yr_V.tif",
+          "source_path": "10yr/10yr_V.tif",
+          "mtime": 1794693969.397632
+        },
+        "100yr/100yr_V.thumb.jpg": {
+          "sha256": "72924931a371ac2dad72cfb8c3fd68372dc4f43198ff7481e9f477cf78d8dae5",
+          "size_bytes": 19068,
+          "href": "hazard-velocity/100yr/100yr_V.thumb.jpg",
+          "mtime": 1794693970.809029
+        },
+        "100yr/100yr_V.tif": {
+          "sha256": "f4dcdf2f1b5b5192df2973a11b6496571318b829f7b717b5c33fbec8d41d1f7d",
+          "size_bytes": 577622464,
+          "href": "hazard-velocity/100yr/100yr_V.tif",
+          "source_path": "100yr/100yr_V.tif",
+          "mtime": 1794693970.636281
+        },
+        "1000yr/1000yr_V.thumb.jpg": {
+          "sha256": "c299fcb1744deb90a8ad07dee17489be33dfe3e2ceea51b76db903615d654892",
+          "size_bytes": 18480,
+          "href": "hazard-velocity/1000yr/1000yr_V.thumb.jpg",
+          "mtime": 1794693972.400462
+        },
+        "1000yr/1000yr_V.tif": {
+          "sha256": "8e0e651074d3279df17adc508ffce29a7302d177812e4afceeb001faebc0a97f",
+          "size_bytes": 709948711,
+          "href": "hazard-velocity/1000yr/1000yr_V.tif",
+          "source_path": "1000yr/1000yr_V.tif",
+          "mtime": 1794693972.2151902
+        },
+        "200yr/200yr_V.thumb.jpg": {
+          "sha256": "b24d28a1737e1cb9b605daf89ca0bea6ed938f81baf81c9e40bab2c4f5c401e0",
+          "size_bytes": 18994,
+          "href": "hazard-velocity/200yr/200yr_V.thumb.jpg",
+          "mtime": 1794693997.7175777
+        },
+        "200yr/200yr_V.tif": {
+          "sha256": "a1447ae0074894405e2ef615cb9948c5c064a44eadc1bc972f7436ed3740e692",
+          "size_bytes": 620234835,
+          "href": "hazard-velocity/200yr/200yr_V.tif",
+          "source_path": "200yr/200yr_V.tif",
+          "mtime": 1794693997.5630805
+        },
+        "2yr/2yr_V.thumb.jpg": {
+          "sha256": "dfa34ae6cf33aee3dc92ab94d060aefe19b996281c5de9df7567f0c650486c14",
+          "size_bytes": 19190,
+          "href": "hazard-velocity/2yr/2yr_V.thumb.jpg",
+          "mtime": 1794693998.0046113
+        },
+        "2yr/2yr_V.tif": {
+          "sha256": "e42ccb3f8659fb4e5dd94decaa05037231cb70beb13550754e67645be8d24bf0",
+          "size_bytes": 346536559,
+          "href": "hazard-velocity/2yr/2yr_V.tif",
+          "source_path": "2yr/2yr_V.tif",
+          "mtime": 1794693997.8615122
+        },
+        "25yr/25yr_V.thumb.jpg": {
+          "sha256": "fc7216fff5f503ec16d0e4e2cfc5d926716d1144ca2ecc25e7cb9db8a33b457c",
+          "size_bytes": 19149,
+          "href": "hazard-velocity/25yr/25yr_V.thumb.jpg",
+          "mtime": 1794693997.9614823
+        },
+        "25yr/25yr_V.tif": {
+          "sha256": "8f12e398354be917bcd14e7741513536d388ca35bb7c0569d9b98a5c57b19bcf",
+          "size_bytes": 496630688,
+          "href": "hazard-velocity/25yr/25yr_V.tif",
+          "source_path": "25yr/25yr_V.tif",
+          "mtime": 1794693997.7990854
+        },
+        "300yr/300yr_V.thumb.jpg": {
+          "sha256": "fe255e54dbdb5eafee82314a76f94474ce8890c8e8fd6aa9df1d4f83a7092702",
+          "size_bytes": 18852,
+          "href": "hazard-velocity/300yr/300yr_V.thumb.jpg",
+          "mtime": 1794694002.157517
+        },
+        "300yr/300yr_V.tif": {
+          "sha256": "a748d97813bfbc2e52d3fa4e830b630b3116110dd22efa09bdb7cbafd71d17c4",
+          "size_bytes": 643390534,
+          "href": "hazard-velocity/300yr/300yr_V.tif",
+          "source_path": "300yr/300yr_V.tif",
+          "mtime": 1794694001.981635
+        },
+        "50yr/50yr_V.thumb.jpg": {
+          "sha256": "d9b1fd6b7bca1f46c7d3de7032a2883896c60ce75fbbecca943ad713f691613b",
+          "size_bytes": 19092,
+          "href": "hazard-velocity/50yr/50yr_V.thumb.jpg",
+          "mtime": 1794694026.8715565
+        },
+        "50yr/50yr_V.tif": {
+          "sha256": "7bda5f11738ddd02f2edf5206998e077f5daa9d312efe996d054fa43d6155844",
+          "size_bytes": 536955608,
+          "href": "hazard-velocity/50yr/50yr_V.tif",
+          "source_path": "50yr/50yr_V.tif",
+          "mtime": 1794694026.7038605
+        },
+        "500yr/500yr_V.thumb.jpg": {
+          "sha256": "1002ad56b752809e55a0d0db358d92b0e7310518600fc6503f09ac9cb8b667de",
+          "size_bytes": 18736,
+          "href": "hazard-velocity/500yr/500yr_V.thumb.jpg",
+          "mtime": 1794694027.5109239
+        },
+        "500yr/500yr_V.tif": {
+          "sha256": "143523c3859607d500475c4a2dfbc45084fe4e7e8ea8842a3d46d4ce3d5ffe3b",
+          "size_bytes": 672784042,
+          "href": "hazard-velocity/500yr/500yr_V.tif",
+          "source_path": "500yr/500yr_V.tif",
+          "mtime": 1794694027.3347883
+        },
+        "400yr/400yr_V.thumb.jpg": {
+          "sha256": "d305f66e44f6ae8a0d68fe104299ad0167380ce6cde2559df8991e6298818b47",
+          "size_bytes": 18843,
+          "href": "hazard-velocity/400yr/400yr_V.thumb.jpg",
+          "mtime": 1794694027.5908103
+        },
+        "400yr/400yr_V.tif": {
+          "sha256": "6312df3c716be7efee4685ac57e861ade4846233b2054c0ac5cff4411062e288",
+          "size_bytes": 659892149,
+          "href": "hazard-velocity/400yr/400yr_V.tif",
+          "source_path": "400yr/400yr_V.tif",
+          "mtime": 1794694027.428198
+        },
+        "5yr/5yr_V.thumb.jpg": {
+          "sha256": "c4d63ec1040ce7314ad3ae19be793df24df7156b4676775054486542b2b6782f",
+          "size_bytes": 19213,
+          "href": "hazard-velocity/5yr/5yr_V.thumb.jpg",
+          "mtime": 1794694029.6834443
+        },
+        "5yr/5yr_V.tif": {
+          "sha256": "23a604e1678b22169276c24e153de25a0b5c6b357fbb1f1ee7718188fab91e76",
+          "size_bytes": 392433448,
+          "href": "hazard-velocity/5yr/5yr_V.tif",
+          "source_path": "5yr/5yr_V.tif",
+          "mtime": 1794694029.51708
+        },
+        "750yr/750yr_V.thumb.jpg": {
+          "sha256": "146d9cfe9aea6399d3c3c6b1e84bdb5fe5b5953d899711dcedaee9ab6461d917",
+          "size_bytes": 18617,
+          "href": "hazard-velocity/750yr/750yr_V.thumb.jpg",
+          "mtime": 1794694056.0747728
+        },
+        "750yr/750yr_V.tif": {
+          "sha256": "8dd1367ee6d29711d0ceeaf91ee5da32813d492f6c7479bf80db9039235fc045",
+          "size_bytes": 694795731,
+          "href": "hazard-velocity/750yr/750yr_V.tif",
+          "source_path": "750yr/750yr_V.tif",
+          "mtime": 1794694055.8613937
+        },
+        "items.parquet": {
+          "sha256": "2c24d5f1eab1a8e7f5063e8a4c44da7cb65b5302ef8e58a728c6bfdca3c8eef1",
+          "size_bytes": 24189,
+          "href": "hazard-velocity/items.parquet",
+          "mtime": 1794694057.3633828,
+          "source_fingerprint": "418db2c89540c43fa6b2f250dd95d039b64de8cc292c33b6aadcfb2868180b84"
+        }
+      },
+      "changes": [
+        "1yr/1yr_V.thumb.jpg",
+        "1yr/1yr_V.tif",
+        "10yr/10yr_V.thumb.jpg",
+        "10yr/10yr_V.tif",
+        "100yr/100yr_V.thumb.jpg",
+        "100yr/100yr_V.tif",
+        "1000yr/1000yr_V.thumb.jpg",
+        "1000yr/1000yr_V.tif",
+        "200yr/200yr_V.thumb.jpg",
+        "200yr/200yr_V.tif",
+        "2yr/2yr_V.thumb.jpg",
+        "2yr/2yr_V.tif",
+        "25yr/25yr_V.thumb.jpg",
+        "25yr/25yr_V.tif",
+        "300yr/300yr_V.thumb.jpg",
+        "300yr/300yr_V.tif",
+        "50yr/50yr_V.thumb.jpg",
+        "50yr/50yr_V.tif",
+        "500yr/500yr_V.thumb.jpg",
+        "500yr/500yr_V.tif",
+        "400yr/400yr_V.thumb.jpg",
+        "400yr/400yr_V.tif",
+        "5yr/5yr_V.thumb.jpg",
+        "5yr/5yr_V.tif",
+        "750yr/750yr_V.thumb.jpg",
+        "750yr/750yr_V.tif",
+        "items.parquet"
+      ]
+    }
+  ]
+}

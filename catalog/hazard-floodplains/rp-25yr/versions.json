@@ -1,0 +1,66 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-11-14T22:33:08.374320Z",
+      "breaking": false,
+      "assets": {
+        "25yr_FP.parquet": {
+          "sha256": "d0a55716ea17b53cfd5321f6039336c7ab3deca0ca31a360ac5fd84a7e17ca49",
+          "size_bytes": 22825491,
+          "href": "hazard-floodplains/rp-25yr/25yr_FP.parquet",
+          "source_path": "25yr_FP.parquet",
+          "source_mtime": 1794691841.8935869,
+          "mtime": 1794691841.8935869,
+          "feature_count": 2462,
+          "schema_fingerprint": "2a95a7b04573b13b"
+        },
+        "25yr_FP.thumb.jpg": {
+          "sha256": "d4aae5c4f6f63c0e610c5ed36f0bb2ef16497c9a4b705c328d2ca454de6f2e61",
+          "size_bytes": 29230,
+          "href": "hazard-floodplains/rp-25yr/25yr_FP.thumb.jpg",
+          "mtime": 1794695579.4876645
+        }
+      },
+      "changes": [
+        "25yr_FP.parquet",
+        "25yr_FP.thumb.jpg"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-11-14T23:22:51.390710Z",
+      "breaking": false,
+      "assets": {
+        "25yr_FP.parquet": {
+          "sha256": "d0a55716ea17b53cfd5321f6039336c7ab3deca0ca31a360ac5fd84a7e17ca49",
+          "size_bytes": 22825491,
+          "href": "hazard-floodplains/rp-25yr/25yr_FP.parquet",
+          "source_path": "25yr_FP.parquet",
+          "source_mtime": 1794691841.8935869,
+          "mtime": 1794691841.8935869,
+          "feature_count": 2462,
+          "schema_fingerprint": "2a95a7b04573b13b"
+        },
+        "25yr_FP.thumb.jpg": {
+          "sha256": "d4aae5c4f6f63c0e610c5ed36f0bb2ef16497c9a4b705c328d2ca454de6f2e61",
+          "size_bytes": 29230,
+          "href": "hazard-floodplains/rp-25yr/25yr_FP.thumb.jpg",
+          "mtime": 1794698571.3315954
+        },
+        "25yr_FP.pmtiles": {
+          "sha256": "a96d4a2103adc49a38445497c32305c0174e2d9e6e44dcfb437822e76502da47",
+          "size_bytes": 7113062,
+          "href": "hazard-floodplains/rp-25yr/25yr_FP.pmtiles",
+          "mtime": 1794698569.7156675
+        }
+      },
+      "changes": [
+        "25yr_FP.pmtiles"
+      ],
+      "message": "Generated PMTiles and thumbnail: 25yr_FP.pmtiles, 25yr_FP.thumb.jpg"
+    }
+  ]
+}

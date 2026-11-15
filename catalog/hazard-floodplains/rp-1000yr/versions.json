@@ -1,0 +1,66 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-11-14T22:33:08.365365Z",
+      "breaking": false,
+      "assets": {
+        "1000yr_FP.parquet": {
+          "sha256": "8234234bcada1a12cce9345a10a8a810be481f2112f11b338df14ecca090def8",
+          "size_bytes": 27525827,
+          "href": "hazard-floodplains/rp-1000yr/1000yr_FP.parquet",
+          "source_path": "1000yr_FP.parquet",
+          "source_mtime": 1794691843.3156164,
+          "mtime": 1794691843.3156164,
+          "feature_count": 2051,
+          "schema_fingerprint": "e59e0a722b60c537"
+        },
+        "1000yr_FP.thumb.jpg": {
+          "sha256": "e5b835826502dc5d7528f329bac0e25a412bc3b5f2fdac31d7909009db0dca86",
+          "size_bytes": 30299,
+          "href": "hazard-floodplains/rp-1000yr/1000yr_FP.thumb.jpg",
+          "mtime": 1794695573.3410666
+        }
+      },
+      "changes": [
+        "1000yr_FP.parquet",
+        "1000yr_FP.thumb.jpg"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-11-14T23:30:05.894045Z",
+      "breaking": false,
+      "assets": {
+        "1000yr_FP.parquet": {
+          "sha256": "8234234bcada1a12cce9345a10a8a810be481f2112f11b338df14ecca090def8",
+          "size_bytes": 27525827,
+          "href": "hazard-floodplains/rp-1000yr/1000yr_FP.parquet",
+          "source_path": "1000yr_FP.parquet",
+          "source_mtime": 1794691843.3156164,
+          "mtime": 1794691843.3156164,
+          "feature_count": 2051,
+          "schema_fingerprint": "e59e0a722b60c537"
+        },
+        "1000yr_FP.thumb.jpg": {
+          "sha256": "e5b835826502dc5d7528f329bac0e25a412bc3b5f2fdac31d7909009db0dca86",
+          "size_bytes": 30299,
+          "href": "hazard-floodplains/rp-1000yr/1000yr_FP.thumb.jpg",
+          "mtime": 1794699005.8322368
+        },
+        "1000yr_FP.pmtiles": {
+          "sha256": "e95fb33d1a795fe15f2262a5ccd715ad2587a3ed691679f41a1f5098add756fe",
+          "size_bytes": 8367140,
+          "href": "hazard-floodplains/rp-1000yr/1000yr_FP.pmtiles",
+          "mtime": 1794699003.8866851
+        }
+      },
+      "changes": [
+        "1000yr_FP.pmtiles"
+      ],
+      "message": "Generated PMTiles and thumbnail: 1000yr_FP.pmtiles, 1000yr_FP.thumb.jpg"
+    }
+  ]
+}

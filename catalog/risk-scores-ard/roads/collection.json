@@ -1,0 +1,606 @@
+{
+  "type": "Collection",
+  "id": "risk-scores-ard/roads",
+  "stac_version": "1.1.0",
+  "description": "Roads",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.mhfd.org",
+      "title": "License"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "./FR_roads.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "pmtiles:layers": [
+        "FR_roads"
+      ]
+    },
+    {
+      "rel": "via",
+      "href": "https://denver-automation-analytics.github.io/mhfd_risk_receptors/",
+      "type": "text/html",
+      "title": "Original source"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "updated": "2026-11-14T23:49:41Z",
+  "geoparquet:geometry_type": [
+    "MultiPolygon",
+    "Polygon"
+  ],
+  "geoparquet:feature_count": 2767,
+  "table:row_count": 2767,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "osmid",
+      "type": "int64"
+    },
+    {
+      "name": "u",
+      "type": "int64"
+    },
+    {
+      "name": "v",
+      "type": "int64"
+    },
+    {
+      "name": "key",
+      "type": "int64"
+    },
+    {
+      "name": "highway",
+      "type": "string"
+    },
+    {
+      "name": "lanes",
+      "type": "double"
+    },
+    {
+      "name": "maxspeed",
+      "type": "double"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "oneway",
+      "type": "bool"
+    },
+    {
+      "name": "reversed",
+      "type": "bool"
+    },
+    {
+      "name": "length",
+      "type": "double"
+    },
+    {
+      "name": "width",
+      "type": "string"
+    },
+    {
+      "name": "access",
+      "type": "string"
+    },
+    {
+      "name": "service",
+      "type": "string"
+    },
+    {
+      "name": "bridge",
+      "type": "string"
+    },
+    {
+      "name": "ref",
+      "type": "string"
+    },
+    {
+      "name": "junction",
+      "type": "string"
+    },
+    {
+      "name": "est_width",
+      "type": "string"
+    },
+    {
+      "name": "tunnel",
+      "type": "string"
+    },
+    {
+      "name": "highway_service",
+      "type": "string"
+    },
+    {
+      "name": "highway_int",
+      "type": "double"
+    },
+    {
+      "name": "aadt",
+      "type": "int64"
+    },
+    {
+      "name": "impact_factor",
+      "type": "int64"
+    },
+    {
+      "name": "receptor_id",
+      "type": "string"
+    },
+    {
+      "name": "area",
+      "type": "string"
+    },
+    {
+      "name": "depth_1000_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_750_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_500_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_400_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_300_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_200_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_100_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_50_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_25_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_10_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_5_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_2_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_1_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_1000_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_750_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_500_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_400_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_300_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_200_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_100_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_50_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_25_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_10_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_5_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_2_max",
+      "type": "double"
+    },
+    {
+      "name": "velocity_1_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_1000_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_750_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_500_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_400_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_300_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_200_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_100_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_50_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_25_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_10_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_5_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_2_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_velocity_1_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_1000_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_750_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_500_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_400_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_300_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_200_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_100_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_50_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_25_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_10_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_5_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_2_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_1_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_1000_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_750_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_500_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_400_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_300_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_200_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_100_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_50_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_25_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_10_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_5_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_2_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_depth_velocity_1_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_1000_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_750_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_500_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_400_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_300_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_200_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_100_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_50_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_25_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_10_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_5_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_2_max",
+      "type": "double"
+    },
+    {
+      "name": "hazard_score_velocity_1_max",
+      "type": "double"
+    },
+    {
+      "name": "flood_risk_depth_max",
+      "type": "double"
+    },
+    {
+      "name": "flood_risk_velocity_max",
+      "type": "double"
+    },
+    {
+      "name": "flood_risk_depth_velocity_max",
+      "type": "double"
+    },
+    {
+      "name": "flood_risk_max",
+      "type": "double"
+    },
+    {
+      "name": "FR_score_P",
+      "type": "double"
+    },
+    {
+      "name": "FR_score_F",
+      "type": "double"
+    },
+    {
+      "name": "receptors_version",
+      "type": "string"
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "bbox",
+      "type": "struct<xmin: double, ymin: double, xmax: double, ymax: double>"
+    }
+  ],
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 16,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -104.7793579,
+    39.8823425,
+    16
+  ],
+  "pmtiles:layers": [
+    "FR_roads"
+  ],
+  "title": "Roads",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -104.8713229,
+          39.7763399,
+          -104.6614329,
+          39.987302
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Mile High Flood District",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://www.mhfd.org"
+    },
+    {
+      "name": "Michael Baker International",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://www.mbakerintl.com"
+    }
+  ],
+  "assets": {
+    "FR_roads": {
+      "href": "./FR_roads.parquet",
+      "type": "application/vnd.apache.parquet",
+      "file:size": 8966001,
+      "file:checksum": "1220738e971e559c9a8b12c90cfcad55bb5e3279061d258a69681775ebaa08983353",
+      "roles": [
+        "data"
+      ]
+    },
+    "thumbnail": {
+      "href": "./FR_roads.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 18871,
+      "file:checksum": "1220434edfe6dd4cb5d604f84368ee5ef43e72024da86edd0e1dca10379aa20617ac",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "FR_roads-tiles": {
+      "href": "./FR_roads.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "FR_roads (vector tiles)",
+      "file:size": 12179692,
+      "file:checksum": "122060a9badafbef51f6e81ecb44fc109d88e00b0c08dee97b6405bf4cd43661c353",
+      "roles": [
+        "visual"
+      ]
+    },
+    "styles/default": {
+      "href": "./styles/default.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Default",
+      "file:size": 457,
+      "file:checksum": "1220db4d008864c383c7384d50bda89b5a3d389996493a164d80d1917bb970795079",
+      "roles": [
+        "style",
+        "default"
+      ]
+    }
+  }
+}

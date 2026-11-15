@@ -1,0 +1,173 @@
+{
+  "type": "Collection",
+  "id": "hazard-floodplains/rp-300yr",
+  "stac_version": "1.1.0",
+  "description": "Rp 300yr",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.mhfd.org",
+      "title": "License"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "./300yr_FP.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "pmtiles:layers": [
+        "300yr_FP"
+      ]
+    },
+    {
+      "rel": "via",
+      "href": "https://denver-automation-analytics.github.io/mhfd_risk_receptors/",
+      "type": "text/html",
+      "title": "Original source"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "updated": "2026-11-14T23:49:25Z",
+  "geoparquet:geometry_type": [
+    "Polygon"
+  ],
+  "geoparquet:feature_count": 2229,
+  "table:row_count": 2229,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "fid",
+      "type": "int64"
+    },
+    {
+      "name": "DN",
+      "type": "int32"
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "bbox",
+      "type": "struct<xmin: double, ymin: double, xmax: double, ymax: double>"
+    }
+  ],
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 16,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -104.8068237,
+    39.924482,
+    16
+  ],
+  "pmtiles:layers": [
+    "300yr_FP"
+  ],
+  "title": "Rp 300yr",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -104.86595,
+          39.773285,
+          -104.656603,
+          39.9872429
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Mile High Flood District",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://www.mhfd.org"
+    },
+    {
+      "name": "Michael Baker International",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://www.mbakerintl.com"
+    }
+  ],
+  "assets": {
+    "300yr_FP": {
+      "href": "./300yr_FP.parquet",
+      "type": "application/vnd.apache.parquet",
+      "file:size": 26415310,
+      "file:checksum": "1220d29cdbe6f91ace53fb8c0130079ee5bb060bad28ff63141aca59987f81e36e30",
+      "roles": [
+        "data"
+      ]
+    },
+    "thumbnail": {
+      "href": "./300yr_FP.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 30195,
+      "file:checksum": "1220290a148fdfac6294af08f3d81218c9dc24834964dcb9ba8e8f05991de9f9c206",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "300yr_FP-tiles": {
+      "href": "./300yr_FP.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "300yr_FP (vector tiles)",
+      "file:size": 8082143,
+      "file:checksum": "1220a32b6bc748e12921356860eeb66f389cdb9d2ebd569d3b14703748282330cd52",
+      "roles": [
+        "visual"
+      ]
+    },
+    "styles/default": {
+      "href": "./styles/default.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Default",
+      "file:size": 457,
+      "file:checksum": "12204fd11340c925481a8dbb4bcfa4d52ad8b4ff2aed9705b54287cf255fb3546328",
+      "roles": [
+        "style",
+        "default"
+      ]
+    }
+  }
+}

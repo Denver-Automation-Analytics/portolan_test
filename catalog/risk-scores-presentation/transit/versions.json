@@ -1,0 +1,66 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-11-14T22:15:36.016755Z",
+      "breaking": false,
+      "assets": {
+        "transit_risk.parquet": {
+          "sha256": "991485f8037183f198fb284fc1f7464c0b654b50736aa5da866d53061a5c46f7",
+          "size_bytes": 17523192,
+          "href": "risk-scores-presentation/transit/transit_risk.parquet",
+          "source_path": "transit_risk.parquet",
+          "source_mtime": 1792725953.1629367,
+          "mtime": 1792725953.1629367,
+          "feature_count": 12884,
+          "schema_fingerprint": "70da358e8c8d7837"
+        },
+        "transit_risk.thumb.jpg": {
+          "sha256": "50e9de230171d622ad3e55a74c5fd64d4b5fc3454d6f2fa56c86689d5f6d6119",
+          "size_bytes": 19641,
+          "href": "risk-scores-presentation/transit/transit_risk.thumb.jpg",
+          "mtime": 1794694535.980956
+        }
+      },
+      "changes": [
+        "transit_risk.parquet",
+        "transit_risk.thumb.jpg"
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "created": "2026-11-14T23:17:40.797506Z",
+      "breaking": false,
+      "assets": {
+        "transit_risk.parquet": {
+          "sha256": "991485f8037183f198fb284fc1f7464c0b654b50736aa5da866d53061a5c46f7",
+          "size_bytes": 17523192,
+          "href": "risk-scores-presentation/transit/transit_risk.parquet",
+          "source_path": "transit_risk.parquet",
+          "source_mtime": 1792725953.1629367,
+          "mtime": 1792725953.1629367,
+          "feature_count": 12884,
+          "schema_fingerprint": "70da358e8c8d7837"
+        },
+        "transit_risk.thumb.jpg": {
+          "sha256": "50e9de230171d622ad3e55a74c5fd64d4b5fc3454d6f2fa56c86689d5f6d6119",
+          "size_bytes": 19641,
+          "href": "risk-scores-presentation/transit/transit_risk.thumb.jpg",
+          "mtime": 1794698260.7295532
+        },
+        "transit_risk.pmtiles": {
+          "sha256": "c0ca8874b804a127423f1bb4a171a90d421bbf605586fab007455bcb65a9dfa7",
+          "size_bytes": 10735521,
+          "href": "risk-scores-presentation/transit/transit_risk.pmtiles",
+          "mtime": 1794698259.444687
+        }
+      },
+      "changes": [
+        "transit_risk.pmtiles"
+      ],
+      "message": "Generated PMTiles and thumbnail: transit_risk.pmtiles, transit_risk.thumb.jpg"
+    }
+  ]
+}

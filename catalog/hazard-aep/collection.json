@@ -1,0 +1,150 @@
+{
+  "type": "Collection",
+  "id": "hazard-aep",
+  "stac_version": "1.1.0",
+  "description": "Hazard Aep",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "via",
+      "href": "https://denver-automation-analytics.github.io/mhfd_risk_receptors/",
+      "type": "text/html",
+      "title": "Original source"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.mhfd.org",
+      "title": "License"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
+  ],
+  "updated": "2026-11-14T22:12:59Z",
+  "title": "Hazard Aep",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -104.88526419603444,
+          39.748340125935506,
+          -104.64645583970847,
+          40.021185063425854
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Mile High Flood District",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://www.mhfd.org"
+    },
+    {
+      "name": "Michael Baker International",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://www.mbakerintl.com"
+    }
+  ],
+  "summaries": {
+    "raster:spatial_resolution": [
+      2.4606249999997285
+    ],
+    "proj:code": [
+      "EPSG:2232"
+    ]
+  },
+  "assets": {
+    "data": {
+      "href": "./aep_grid.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Annual Exceedance Probability Grid",
+      "file:size": 182073512,
+      "file:checksum": "1220575c9d41a9f03006edfe2b8ef411326822d734842fef616a2d520e4add148fdf",
+      "proj:code": "EPSG:2232",
+      "proj:bbox": [
+        3172851.8268881473,
+        1698581.5905908789,
+        3239074.62751314,
+        1797444.5818408679
+      ],
+      "proj:shape": [
+        40178,
+        26913
+      ],
+      "proj:transform": [
+        3172851.8268881473,
+        2.4606249999997285,
+        0.0,
+        1797444.5818408679,
+        0.0,
+        -2.4606249999997285
+      ],
+      "render:colormap_name": "viridis",
+      "bands": [
+        {
+          "name": "band_1",
+          "data_type": "float32",
+          "nodata": -9999.0,
+          "statistics": {
+            "minimum": 0.00016666666488163,
+            "maximum": 0.99900007247925,
+            "mean": 0.4756188274057,
+            "stddev": 0.45684084735595
+          }
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "thumbnail": {
+      "href": "./aep_grid.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 18330,
+      "file:checksum": "1220fd525abc721c54d9acbec0df6a94ad3de7f1e32fff5e76ae2bfd19ad6ae50ad9",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

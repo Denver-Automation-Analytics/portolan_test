@@ -1,0 +1,91 @@
+{
+  "type": "Catalog",
+  "id": "mhfd-flood-risk-2nd3rd-creek",
+  "stac_version": "1.1.0",
+  "description": "Cloud-native catalog of flood hazard and risk outputs for Second and Third Creek from the Mile High Flood District Flood Risk Program.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./catalog.json",
+      "type": "application/json",
+      "title": "MHFD Flood Risk - Second and Third Creek"
+    },
+    {
+      "rel": "child",
+      "href": "./hazard-depth/collection.json",
+      "type": "application/json",
+      "title": "Hazard Depth"
+    },
+    {
+      "rel": "child",
+      "href": "./hazard-velocity/collection.json",
+      "type": "application/json",
+      "title": "Hazard Velocity"
+    },
+    {
+      "rel": "child",
+      "href": "./hazard-depth-velocity/collection.json",
+      "type": "application/json",
+      "title": "Hazard Depth Velocity"
+    },
+    {
+      "rel": "child",
+      "href": "./risk-drivers/collection.json",
+      "type": "application/json",
+      "title": "Risk Drivers"
+    },
+    {
+      "rel": "child",
+      "href": "./risk-threat-aep/collection.json",
+      "type": "application/json",
+      "title": "Risk Threat Aep"
+    },
+    {
+      "rel": "child",
+      "href": "./hazard-aep/collection.json",
+      "type": "application/json",
+      "title": "Hazard Aep"
+    },
+    {
+      "rel": "child",
+      "href": "./hazard-floodplains/catalog.json",
+      "type": "application/json",
+      "title": "Hazard Floodplains"
+    },
+    {
+      "rel": "child",
+      "href": "./risk-scores-ard/catalog.json",
+      "type": "application/json",
+      "title": "Risk Scores Ard"
+    },
+    {
+      "rel": "child",
+      "href": "./risk-scores-grid/catalog.json",
+      "type": "application/json",
+      "title": "Risk Scores Grid"
+    },
+    {
+      "rel": "child",
+      "href": "./risk-scores-presentation/catalog.json",
+      "type": "application/json",
+      "title": "Risk Scores Presentation"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    }
+  ],
+  "title": "MHFD Flood Risk - Second and Third Creek",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
+  ],
+  "updated": "2026-11-14T23:49:52Z"
+}

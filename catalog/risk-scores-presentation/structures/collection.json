@@ -1,0 +1,292 @@
+{
+  "type": "Collection",
+  "id": "risk-scores-presentation/structures",
+  "stac_version": "1.1.0",
+  "description": "Structures",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.mhfd.org",
+      "title": "License"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "./structure_risk.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "pmtiles:layers": [
+        "structure_risk"
+      ]
+    },
+    {
+      "rel": "via",
+      "href": "https://denver-automation-analytics.github.io/mhfd_risk_receptors/",
+      "type": "text/html",
+      "title": "Original source"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "updated": "2026-11-14T23:49:50Z",
+  "geoparquet:geometry_type": [
+    "MultiPolygon"
+  ],
+  "geoparquet:feature_count": 20767,
+  "table:row_count": 20767,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "OBJECTID",
+      "type": "int64"
+    },
+    {
+      "name": "receptor_id",
+      "type": "string"
+    },
+    {
+      "name": "receptor_type",
+      "type": "string"
+    },
+    {
+      "name": "occtype",
+      "type": "string"
+    },
+    {
+      "name": "est_total_pop",
+      "type": "double"
+    },
+    {
+      "name": "impact_factor",
+      "type": "int64"
+    },
+    {
+      "name": "found_type",
+      "type": "string"
+    },
+    {
+      "name": "sqft",
+      "type": "double"
+    },
+    {
+      "name": "num_story",
+      "type": "double"
+    },
+    {
+      "name": "val_struct",
+      "type": "double"
+    },
+    {
+      "name": "med_yr_blt",
+      "type": "double"
+    },
+    {
+      "name": "PROP_ADDR",
+      "type": "string"
+    },
+    {
+      "name": "flood_risk_depth_max",
+      "type": "double"
+    },
+    {
+      "name": "flood_risk_velocity_max",
+      "type": "double"
+    },
+    {
+      "name": "flood_risk_depth_velocity_max",
+      "type": "double"
+    },
+    {
+      "name": "flood_risk_max",
+      "type": "double"
+    },
+    {
+      "name": "FR_score_P",
+      "type": "double"
+    },
+    {
+      "name": "FR_score_F",
+      "type": "double"
+    },
+    {
+      "name": "depth_1_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_2_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_5_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_10_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_25_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_50_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_100_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_200_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_300_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_400_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_500_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_750_max",
+      "type": "double"
+    },
+    {
+      "name": "depth_1000_max",
+      "type": "double"
+    },
+    {
+      "name": "receptors_version",
+      "type": "string"
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "geometry_bbox",
+      "type": "struct<xmin: float not null, ymin: float not null, xmax: float not null, ymax: float not null>"
+    }
+  ],
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 15,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -104.7821044,
+    39.8802347,
+    15
+  ],
+  "pmtiles:layers": [
+    "structure_risk"
+  ],
+  "title": "Structures",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -104.8629099,
+          39.7802859,
+          -104.6602199,
+          39.986941
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Mile High Flood District",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://www.mhfd.org"
+    },
+    {
+      "name": "Michael Baker International",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://www.mbakerintl.com"
+    }
+  ],
+  "assets": {
+    "structure_risk": {
+      "href": "./structure_risk.parquet",
+      "type": "application/vnd.apache.parquet",
+      "file:size": 5247841,
+      "file:checksum": "1220c99bb5da672206f2aebfecb6ad1ec91c56b6a4073ef9bcd87c27e6a31b2bc444",
+      "roles": [
+        "data"
+      ]
+    },
+    "thumbnail": {
+      "href": "./structure_risk.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 13243,
+      "file:checksum": "1220f788b4bbb8d04b9191ed0d6441b10d9a9b68b5a37748de1276cd6048d99619e7",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "structure_risk-tiles": {
+      "href": "./structure_risk.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "structure_risk (vector tiles)",
+      "file:size": 10877287,
+      "file:checksum": "122016394f897efea62c6d149d710adc25ca6248896be35b53dd64aef3e2bf6a46ba",
+      "roles": [
+        "visual"
+      ]
+    },
+    "styles/default": {
+      "href": "./styles/default.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Default",
+      "file:size": 475,
+      "file:checksum": "1220979819e511d2c5f4e8a3d6644fd2756decf8bd3e90f89f7e84c78a24a16cb27f",
+      "roles": [
+        "style",
+        "default"
+      ]
+    }
+  }
+}

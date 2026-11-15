@@ -1,0 +1,25 @@
+{
+  "version": 8,
+  "name": "Default",
+  "sources": {
+    "data": {
+      "type": "vector",
+      "url": "pmtiles://../FR_critical_facilities.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 16
+    }
+  },
+  "layers": [
+    {
+      "id": "FR_critical_facilities-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "FR_critical_facilities",
+      "paint": {
+        "fill-color": "#3388ff",
+        "fill-opacity": 0.6,
+        "fill-outline-color": "#2266cc"
+      }
+    }
+  ]
+}

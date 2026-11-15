@@ -1,0 +1,260 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_id": "mhfd-flood-risk-2nd3rd-creek",
+  "created": "2026-11-14T21:25:29.212798+00:00",
+  "collections": {
+    "hazard-depth": {
+      "updated": "2026-11-14T23:47:02.266200+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 27,
+      "total_size_bytes": 5613331686
+    },
+    "hazard-velocity": {
+      "updated": "2026-11-14T22:07:37.423815+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 27,
+      "total_size_bytes": 7099668685
+    },
+    "hazard-depth-velocity": {
+      "updated": "2026-11-14T22:09:38.392649+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 27,
+      "total_size_bytes": 7405205628
+    },
+    "risk-drivers": {
+      "updated": "2026-11-14T22:12:18.941291+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 5,
+      "total_size_bytes": 213751426
+    },
+    "risk-threat-aep": {
+      "updated": "2026-11-14T22:12:22.405965+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 5,
+      "total_size_bytes": 1032475172
+    },
+    "hazard-aep": {
+      "updated": "2026-11-14T22:12:59.994795+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 3,
+      "total_size_bytes": 182113381
+    },
+    "hazard-floodplains/1000yr": {
+      "updated": "2026-11-14T22:15:22.545599+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 4,
+      "total_size_bytes": 103308284
+    },
+    "hazard-floodplains/100yr": {
+      "updated": "2026-11-14T22:15:22.545599+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 4,
+      "total_size_bytes": 93812055
+    },
+    "hazard-floodplains/10yr": {
+      "updated": "2026-11-14T22:15:22.545599+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 4,
+      "total_size_bytes": 79749468
+    },
+    "hazard-floodplains/1yr": {
+      "updated": "2026-11-14T22:15:22.545599+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 4,
+      "total_size_bytes": 66629096
+    },
+    "hazard-floodplains/200yr": {
+      "updated": "2026-11-14T22:15:22.545599+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 4,
+      "total_size_bytes": 97458463
+    },
+    "hazard-floodplains/25yr": {
+      "updated": "2026-11-14T22:15:22.545599+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 4,
+      "total_size_bytes": 86300269
+    },
+    "hazard-floodplains/2yr": {
+      "updated": "2026-11-14T22:15:22.545599+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 4,
+      "total_size_bytes": 70184125
+    },
+    "hazard-floodplains/300yr": {
+      "updated": "2026-11-14T22:15:22.545599+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 4,
+      "total_size_bytes": 99420073
+    },
+    "hazard-floodplains/400yr": {
+      "updated": "2026-11-14T22:15:22.545599+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 4,
+      "total_size_bytes": 100580464
+    },
+    "hazard-floodplains/500yr": {
+      "updated": "2026-11-14T22:15:22.545599+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 4,
+      "total_size_bytes": 101327180
+    },
+    "hazard-floodplains/50yr": {
+      "updated": "2026-11-14T22:15:22.545599+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 4,
+      "total_size_bytes": 90382025
+    },
+    "hazard-floodplains/5yr": {
+      "updated": "2026-11-14T22:15:22.545599+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 4,
+      "total_size_bytes": 75539945
+    },
+    "hazard-floodplains/750yr": {
+      "updated": "2026-11-14T22:15:22.545599+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 4,
+      "total_size_bytes": 102595485
+    },
+    "risk-scores-ard/critical-facilities": {
+      "updated": "2026-11-14T23:20:00.922960+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 577794
+    },
+    "risk-scores-ard/roads": {
+      "updated": "2026-11-14T23:19:55.938178+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 21164564
+    },
+    "risk-scores-ard/structures": {
+      "updated": "2026-11-14T23:19:37.389944+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 46602881
+    },
+    "risk-scores-ard/trails": {
+      "updated": "2026-11-14T23:20:13.062987+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 7282569
+    },
+    "risk-scores-grid/1000m": {
+      "updated": "2026-11-14T22:15:32.247084+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 2,
+      "total_size_bytes": 452942
+    },
+    "risk-scores-grid/500m": {
+      "updated": "2026-11-14T22:15:32.247084+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 2,
+      "total_size_bytes": 1507839
+    },
+    "risk-scores-presentation/structures": {
+      "updated": "2026-11-14T23:19:17.468163+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 16138371
+    },
+    "risk-scores-presentation/transit": {
+      "updated": "2026-11-14T23:17:40.800229+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 28278354
+    },
+    "hazard-floodplains/rp-1000yr": {
+      "updated": "2026-11-14T23:30:05.897136+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 35923266
+    },
+    "hazard-floodplains/rp-100yr": {
+      "updated": "2026-11-14T23:24:01.737038+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 32559605
+    },
+    "hazard-floodplains/rp-10yr": {
+      "updated": "2026-11-14T23:22:20.559387+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 27675349
+    },
+    "hazard-floodplains/rp-1yr": {
+      "updated": "2026-11-14T23:20:48.251012+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 23053267
+    },
+    "hazard-floodplains/rp-200yr": {
+      "updated": "2026-11-14T23:24:37.999970+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 33853138
+    },
+    "hazard-floodplains/rp-25yr": {
+      "updated": "2026-11-14T23:22:51.402943+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 29967783
+    },
+    "hazard-floodplains/rp-2yr": {
+      "updated": "2026-11-14T23:21:21.804656+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 24299271
+    },
+    "hazard-floodplains/rp-300yr": {
+      "updated": "2026-11-14T23:25:17.375262+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 34527648
+    },
+    "hazard-floodplains/rp-400yr": {
+      "updated": "2026-11-14T23:25:55.254627+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 34919855
+    },
+    "hazard-floodplains/rp-500yr": {
+      "updated": "2026-11-14T23:26:36.322757+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 35221638
+    },
+    "hazard-floodplains/rp-50yr": {
+      "updated": "2026-11-14T23:23:23.777348+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 31354686
+    },
+    "hazard-floodplains/rp-5yr": {
+      "updated": "2026-11-14T23:21:49.983982+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 26173004
+    },
+    "hazard-floodplains/rp-750yr": {
+      "updated": "2026-11-14T23:27:19.105683+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 35675471
+    },
+    "risk-scores-grid/res-1000m": {
+      "updated": "2026-11-14T23:20:22.804377+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 982562
+    },
+    "risk-scores-grid/res-500m": {
+      "updated": "2026-11-14T23:20:18.826352+00:00",
+      "current_version": "1.0.1",
+      "asset_count": 3,
+      "total_size_bytes": 3409015
+    }
+  },
+  "updated": "2026-11-14T23:47:02.266200+00:00"
+}

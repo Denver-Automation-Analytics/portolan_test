@@ -1,0 +1,353 @@
+{
+  "type": "Collection",
+  "id": "risk-scores-grid/res-1000m",
+  "stac_version": "1.1.0",
+  "description": "Res 1000m",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.mhfd.org",
+      "title": "License"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "./aggregated_flood_risk_1000m.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "pmtiles:layers": [
+        "aggregated_flood_risk_1000m"
+      ]
+    },
+    {
+      "rel": "via",
+      "href": "https://denver-automation-analytics.github.io/mhfd_risk_receptors/",
+      "type": "text/html",
+      "title": "Original source"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "updated": "2026-11-14T23:49:48Z",
+  "geoparquet:geometry_type": [
+    "Polygon"
+  ],
+  "geoparquet:feature_count": 6132,
+  "table:row_count": 6132,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "ID.1000",
+      "type": "int64"
+    },
+    {
+      "name": "sar_total_flood_risk_depth_max",
+      "type": "double"
+    },
+    {
+      "name": "sar_total_flood_risk_velocity_max",
+      "type": "double"
+    },
+    {
+      "name": "sar_total_flood_risk_depth_velocity_max",
+      "type": "double"
+    },
+    {
+      "name": "sar_structure_count",
+      "type": "double"
+    },
+    {
+      "name": "sar_structure_at_risk_count",
+      "type": "double"
+    },
+    {
+      "name": "sar_structure_at_risk_pct",
+      "type": "double"
+    },
+    {
+      "name": "sar_total_flood_risk_max",
+      "type": "double"
+    },
+    {
+      "name": "cf_total_flood_risk_depth_max",
+      "type": "double"
+    },
+    {
+      "name": "cf_total_flood_risk_velocity_max",
+      "type": "double"
+    },
+    {
+      "name": "cf_total_flood_risk_depth_velocity_max",
+      "type": "double"
+    },
+    {
+      "name": "cf_structure_count",
+      "type": "double"
+    },
+    {
+      "name": "cf_structure_at_risk_count",
+      "type": "double"
+    },
+    {
+      "name": "cf_structure_at_risk_pct",
+      "type": "double"
+    },
+    {
+      "name": "cf_total_flood_risk_max",
+      "type": "double"
+    },
+    {
+      "name": "rar_total_flood_risk_depth_max",
+      "type": "double"
+    },
+    {
+      "name": "rar_total_flood_risk_velocity_max",
+      "type": "double"
+    },
+    {
+      "name": "rar_total_flood_risk_depth_velocity_max",
+      "type": "double"
+    },
+    {
+      "name": "rar_structure_count",
+      "type": "double"
+    },
+    {
+      "name": "rar_structure_at_risk_count",
+      "type": "double"
+    },
+    {
+      "name": "rar_structure_at_risk_pct",
+      "type": "double"
+    },
+    {
+      "name": "rar_total_flood_risk_max",
+      "type": "double"
+    },
+    {
+      "name": "tar_total_flood_risk_depth_max",
+      "type": "double"
+    },
+    {
+      "name": "tar_total_flood_risk_velocity_max",
+      "type": "double"
+    },
+    {
+      "name": "tar_total_flood_risk_depth_velocity_max",
+      "type": "double"
+    },
+    {
+      "name": "tar_structure_count",
+      "type": "double"
+    },
+    {
+      "name": "tar_structure_at_risk_count",
+      "type": "double"
+    },
+    {
+      "name": "tar_structure_at_risk_pct",
+      "type": "double"
+    },
+    {
+      "name": "tar_total_flood_risk_max",
+      "type": "double"
+    },
+    {
+      "name": "multireceptor_flood_risk",
+      "type": "double"
+    },
+    {
+      "name": "multireceptor_flood_risk_rank",
+      "type": "double"
+    },
+    {
+      "name": "grid_area",
+      "type": "double"
+    },
+    {
+      "name": "area_in_domain",
+      "type": "double"
+    },
+    {
+      "name": "pct_in_domain",
+      "type": "double"
+    },
+    {
+      "name": "effective_area",
+      "type": "double"
+    },
+    {
+      "name": "sar_flood_risk_score",
+      "type": "double"
+    },
+    {
+      "name": "sar_flood_risk_weighted",
+      "type": "double"
+    },
+    {
+      "name": "sar_flood_risk_rank",
+      "type": "int64"
+    },
+    {
+      "name": "cf_flood_risk_score",
+      "type": "double"
+    },
+    {
+      "name": "cf_flood_risk_weighted",
+      "type": "double"
+    },
+    {
+      "name": "cf_flood_risk_rank",
+      "type": "int64"
+    },
+    {
+      "name": "rar_flood_risk_score",
+      "type": "double"
+    },
+    {
+      "name": "rar_flood_risk_weighted",
+      "type": "double"
+    },
+    {
+      "name": "rar_flood_risk_rank",
+      "type": "int64"
+    },
+    {
+      "name": "tar_flood_risk_score",
+      "type": "double"
+    },
+    {
+      "name": "tar_flood_risk_weighted",
+      "type": "double"
+    },
+    {
+      "name": "tar_flood_risk_rank",
+      "type": "int64"
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "bbox",
+      "type": "struct<xmin: double, ymin: double, xmax: double, ymax: double>"
+    }
+  ],
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 6,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -104.4191909,
+    39.375516,
+    6
+  ],
+  "pmtiles:layers": [
+    "aggregated_flood_risk_1000m"
+  ],
+  "title": "Res 1000m",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -105.3679089,
+          39.375516,
+          -104.4191909,
+          40.182716
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Mile High Flood District",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://www.mhfd.org"
+    },
+    {
+      "name": "Michael Baker International",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://www.mbakerintl.com"
+    }
+  ],
+  "assets": {
+    "aggregated_flood_risk_1000m": {
+      "href": "./aggregated_flood_risk_1000m.parquet",
+      "type": "application/vnd.apache.parquet",
+      "file:size": 409194,
+      "file:checksum": "122022a83d6b5dd37e7ea2da0c81c371d519a2fd1aeff6e322d6a269cf74006dbcbe",
+      "roles": [
+        "data"
+      ]
+    },
+    "thumbnail": {
+      "href": "./aggregated_flood_risk_1000m.thumb.jpg",
+      "type": "image/jpeg",
+      "file:size": 43748,
+      "file:checksum": "1220eebef6a418d5690ec02f5081f53abc5c4615464d5abfa7b655512d50d39c6f04",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "aggregated_flood_risk_1000m-tiles": {
+      "href": "./aggregated_flood_risk_1000m.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "aggregated_flood_risk_1000m (vector tiles)",
+      "file:size": 529620,
+      "file:checksum": "12205b826cd244c801322a92b4bb41c0bced54b25b2a08babe4d8758e54609d3aa95",
+      "roles": [
+        "visual"
+      ]
+    },
+    "styles/default": {
+      "href": "./styles/default.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Default",
+      "file:size": 513,
+      "file:checksum": "1220e0c91b4cf5f41d4d1f0aeb9867d706dac9ef6fedf4e7396d2bb766317d7be6a5",
+      "roles": [
+        "style",
+        "default"
+      ]
+    }
+  }
+}

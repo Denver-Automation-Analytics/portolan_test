@@ -1,0 +1,161 @@
+# .portolan/metadata.yaml
+#
+# Human-enrichable metadata that supplements STAC.
+# Columns and bands are auto-extracted from data files.
+#
+# Only contact and license are REQUIRED here.
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: Human-readable title / description override (Issue #502)
+# Portolan auto-derives a human-readable title from the collection id
+# (e.g. "publico_arbolado" -> "Publico Arbolado"). Set these to override it
+# with a better name/description; leave blank to keep the auto-derived value.
+# At the catalog root they name the catalog itself. A subcatalog names itself
+# the same way. They apply to this object alone. A child never inherits a
+# title or a description from its parent.
+# -----------------------------------------------------------------------------
+
+# title: ""                         # optional - overrides the auto-derived title
+# description: ""                    # optional - overrides the auto-derived description
+
+# -----------------------------------------------------------------------------
+# REQUIRED: Accountability
+# -----------------------------------------------------------------------------
+
+contact:
+  name: "Daniel Aragon"
+  email: "daniel.aragon@mbakerintl.com"
+
+# LICENSE: TBD — pending MHFD approval. Replace "other" with the SPDX
+# identifier once approved (e.g. CC-BY-4.0). Update license_url to point
+# to the final license text. portolan add will refuse to write collections
+# without a valid license, so do not publish until this is set.
+license: "other"
+
+# -----------------------------------------------------------------------------
+# Providers: who made this data, and who maintains this copy of it
+#
+# Name the organization that originally created the data with the "producer"
+# role. Add "licensor" and "processor" where they apply. Roles may be combined,
+# so a self-published collection is one entry holding both producer and host.
+#
+# The "host" is whoever maintains this catalog, not the cloud vendor storing it:
+# a catalog on S3 run by a city GIS office lists the office, never AWS. Leave the
+# host out and it is taken from `contact` above. Order does not matter; Portolan
+# writes the host last, as the spec requires.
+#
+# Producer and host together decide what kind of catalog this is. Same
+# organization means official, this catalog being the data's canonical home.
+# Different organizations mean a mirror, and Portolan then links back to
+# `source_url` below and records each sync.
+# -----------------------------------------------------------------------------
+
+providers:
+  - name: "Mile High Flood District"
+    roles: ["producer", "licensor"]
+    url: "https://www.mhfd.org"
+  - name: "Michael Baker International"
+    roles: ["processor", "host"]
+    url: "https://www.mbakerintl.com"
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: Discovery and citation
+# -----------------------------------------------------------------------------
+
+license_url: "https://www.mhfd.org"  # TODO: update to the actual license text URL once MHFD confirms
+citation: ""
+doi: ""
+keywords:
+  - flood
+  - flood hazard
+  - flood risk
+  - floodplain
+  - depth
+  - velocity
+  - annual exceedance probability
+  - stormwater
+  - hydrology
+  - Second Creek
+  - Third Creek
+  - Denver
+  - Colorado
+  - MHFD
+  - Mile High Flood District
+attribution: "Mile High Flood District (MHFD)"
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: Data lifecycle
+# -----------------------------------------------------------------------------
+
+source_url: "https://denver-automation-analytics.github.io/mhfd_risk_receptors/"
+processing_notes: >
+  Final outputs of the MHFD Flood Risk Program for Second and Third Creek,
+  produced by Michael Baker International.
+  Raster files (COG) and vector files (GeoParquet v1.1.0) were confirmed
+  cloud-native in a format pre-flight on 2026-11-14 using portolan check
+  --geo-assets, rio cogeo validate, and gpio inspect.
+  Floodplain layers were originally delivered as GeoPackage (.gpkg) and
+  converted to GeoParquet using portolan check --fix on 2026-11-14.
+  LAT and LONG columns were dropped from risk/FR_scores_presentation/ files
+  (structure_risk.parquet, transit_risk.parquet) because the geometry column
+  carries the same information.
+  PMTiles generated from GeoParquet for all vector collections.
+  Rasters reused as delivered (all 44 TIFs are valid COGs).
+known_issues: >
+  The following column meanings have not been confirmed by MHFD/MBI
+  documentation and are left undescribed until a data dictionary is provided:
+  OCC_CLS and PRIM_OCC (FR_structures.parquet) — occupancy classification
+  code list unknown; occtype (structure_risk.parquet) — code list unknown;
+  found_type (structure_risk.parquet) — foundation type codes unknown;
+  impact_factor (FR_structures, structure_risk, transit_risk, FR_trails) —
+  definition and scale unknown; FR_score_P and FR_score_F (structure_risk,
+  transit_risk) — meaning of P and F suffixes unknown; bldg_type
+  (FR_structures) — code list unknown; priority_level (FR_critical_facilities)
+  — values and meaning unknown; source_aggregate, source_category1,
+  source_category2 (FR_critical_facilities) — classification taxonomy unknown.
+  Raster pixel units (depth in feet or meters, velocity units, AEP scale,
+  DV units) have not been confirmed from project documentation.
+  Many of the 100+ columns in the ARD files (FR_structures 175 cols,
+  FR_roads 111, FR_critical_facilities 121, FR_trails 91) lack descriptions
+  pending a full data dictionary from MHFD/MBI.
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: Data defaults (when auto-extraction fails or needs override)
+# These values apply to items where the source file lacks the metadata.
+# Useful for data where nodata or temporal info wasn't set upstream.
+# -----------------------------------------------------------------------------
+
+# defaults:
+#   temporal:
+#     year: 2025                    # Year range (Jan 1 - Dec 31)
+#     # Or explicit bounds:
+#     # start: "2025-04-15"         # ISO date (YYYY-MM-DD)
+#     # end: "2025-05-30"
+#   raster:
+#     nodata: 0                     # Uniform nodata for all bands
+#     # Or per-band:
+#     # nodata: [0, 0, 255]         # Per-band nodata values
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: Consumption examples
+# -----------------------------------------------------------------------------
+# Add collection-specific query examples, especially when structure is unusual
+# (multiple related files, required joins, non-obvious column meanings).
+# Default examples (DuckDB SQL + GeoPandas) are auto-generated if omitted.
+#
+# examples:
+#   - engine: duckdb                # duckdb | python | r | other
+#     description: "Join census data with geographic boundaries"
+#     code: |
+#       SELECT r.*, c.population
+#       FROM read_parquet('https://.../radios.parquet') r
+#       JOIN read_parquet('https://.../census-data.parquet') c
+#         ON r.cod_2022 = c.id_geo
+#   - engine: python
+#     description: "Load and merge with GeoPandas"
+#     code: |
+#       import geopandas as gpd
+#       import pandas as pd
+#       radios = gpd.read_parquet('https://.../radios.parquet')
+#       census = pd.read_parquet('https://.../census-data.parquet')
+#       merged = radios.merge(census, left_on='cod_2022', right_on='id_geo')
