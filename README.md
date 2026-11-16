@@ -356,6 +356,17 @@ portolan check --live --url https://portolan-test.s3.us-east-1.amazonaws.com
 
 ---
 
+## Geolibre incorporation
+
+[Geolibre](https://geolibre.app/) is a free and open source, browser based GIS system that is well suited for portolan-spec datasets. An
+example geolibre project has been created and is shareable for anyone with this [link](https://share.geolibre.app/daniel-aragon/portolan-test-second-third-creek). The geolibre file has also been added to the catalog.json as its own catalog - readily accessible next to the other assets of the project as it's own first class dataset.
+
+**Potential benefits**
+- Ready-made GUI for every watershed
+- Preconfigured map styles and symbology, stored in json (or even as stac items)
+- Easy access for all stakeholders (no desktop based GUI configuration)
+- No download of cloud items needed (when published to a public blob store, ie AWS S3)
+
 ## Next steps (not in scope yet)
 
 - **Front end:** a publisher-branded viewer for this catalog, built either from
