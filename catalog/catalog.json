@@ -71,6 +71,12 @@
       "title": "Risk Scores Presentation"
     },
     {
+      "rel": "child",
+      "href": "./maps/collection.json",
+      "type": "application/json",
+      "title": "Maps"
+    },
+    {
       "rel": "agents",
       "href": "./AGENTS.md",
       "type": "text/markdown",
@@ -87,5 +93,5 @@
   "stac_extensions": [
     "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
   ],
-  "updated": "2026-11-15T02:24:29Z"
+  "updated": "2026-11-16T14:05:00Z"
 }

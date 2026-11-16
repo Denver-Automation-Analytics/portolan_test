@@ -39,6 +39,12 @@
       "asset_count": 2,
       "total_size_bytes": 182091842
     },
+    "maps": {
+      "updated": "2026-11-16T14:05:00.000000+00:00",
+      "current_version": "1.0.0",
+      "asset_count": 1,
+      "total_size_bytes": 53310
+    },
     "hazard-floodplains/1000yr": {
       "updated": "2026-11-14T22:15:22.545599+00:00",
       "current_version": "1.0.0",
@@ -256,5 +262,5 @@
       "total_size_bytes": 3409015
     }
   },
-  "updated": "2026-11-15T02:24:41.452715+00:00"
+  "updated": "2026-11-16T14:05:00.000000+00:00"
 }

@@ -1,0 +1,22 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-11-16T14:05:00.000000Z",
+      "breaking": false,
+      "assets": {
+        "second-third-test.geolibre": {
+          "sha256": "f40409e79b5d228f1bc84094faf6486a735be18730b1bac043e890093e7cfd3f",
+          "size_bytes": 53310,
+          "href": "maps/second-third-test.geolibre",
+          "mtime": 1794837861.477
+        }
+      },
+      "changes": [
+        "second-third-test.geolibre"
+      ]
+    }
+  ]
+}
